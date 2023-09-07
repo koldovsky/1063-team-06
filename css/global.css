@@ -5,6 +5,23 @@
 }
 
 :root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --red-color: #ee2e14;
+    --pale-gray-color: #f7f7f7;
+    --main-text-dark-color: #505155;
+    --subt-white-background-color: #6f7380;
+    --subt-dark-background-color: #ffffff99;
+    --brand-blue-color: #14a9ee;
+    --background-dark-shade: #232428;
+    --caption-color-light-gray: #a9a9a9;
+    --text-gray-color: #707070;
+    --input-background-color: #2D2E34;
+    --background-light-gray-color: #ffffff0d;
+    --input-text-gray-color: #ffffff8A;
+    --white-translucent-color: #ffffff66;
+    --black-translucent-color: #000000a6;
+
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
 }
