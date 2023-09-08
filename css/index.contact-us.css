@@ -1,0 +1,49 @@
+section.contact-us {
+  background-color: #232428;
+  width: 50%;
+  color: #ffffff99;
+  text-align: center;
+  margin: 10px 0;
+}
+
+span.contact-us__title-prefix {
+    color: #ee2e14;
+}
+
+span.contact-us__title-text {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+h2.contact-us__description-header {
+  color: #ffffff;
+  font-size: 39px;
+  line-height: 1.2;
+  font-family: 'Playfair Display', serif;
+}
+
+p.contact-us__description-details {
+  font-size: 17px;
+  text-align: justify;
+  text-align-last: center;
+  margin: 10px 30px;
+}
+
+form.contact-us__form input {
+  display: block;
+  margin: 10px auto;
+  width: 85%;
+}
+
+button.contact-us__form-button {
+  background-color: #14a9ee;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 10px 10px;
+}
+
+button.contact-us__form-button:hover {
+  background-color: #ffffff;
+  color: #232428;
+}
