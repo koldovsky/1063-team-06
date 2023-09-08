@@ -1,0 +1,8 @@
+.beautiful-landscapes {
+    background-color: var(--background-dark-shade);
+}
+
+.beautiful-landscapes__text-content, 
+.beautiful-landscapes__title-text {
+    color: rgba(255,255,255,0.6);
+}
