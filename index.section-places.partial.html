@@ -1,163 +1,217 @@
-<div class="places">
-    <div class="places_title">
-        <p><span>-</span>PLACES</p>
+<section class="places">
+    <div class="places__container">
+        <div class="places__header header-content">
+            <p><span class="header-content__title-prefix">-</span>PLACES</p>
+        </div>
+        <div class="header-content__subtitle">
+            <h2><strong class="subtitle__strong">Where do we go?</strong></h2>
+        </div>
+        <div class="header-content__description">
+            <p>10 days of travel and 5 unique places in Norway are waiting for us. Read more about each place from our
+            itinerary below.</p>
+        </div>
+        <!-- Main content-->
+    <div class="places__main-content">
+        <!-- Tab links -->
+        <div class="main-content__tab">
+            <button class="tablinks" onclick="openCity(event, 'Oslo')">Oslo</button>
+            <button class="tablinks" onclick="openCity(event, 'Trondheim')">Trondheim</button>
+            <button class="tablinks" onclick="openCity(event, 'Bodø')">Bodø</button>
+            <button class="tablinks" onclick="openCity(event, 'Lofoten Islands')">Lofoten Islands</button>
+            <button class="tablinks" onclick="openCity(event, 'Tromsø')">Tromsø</button>
+        <!-- Tab content -->
+        <div id="Oslo" class="tabcontent">
+            <div class="tabcontent__destination-image">
+                <img src="img/places-section/oslo.jpg" alt="Oslo" width="585">
+            </div>
+            <div class="tabcontent__destination-subtitle">
+                <h5>Oslo - First point</h5>
+            </div>
+            <div class="tabcontent__destination-title">
+                <h3>The Capital and Largest City of Norway</h3>
+            </div>
+            <div class="tabcontent__duration">
+                <p><strong class="bold-text">1 night</strong></p>
+            </div>
+            <div class="tabcontent__destination-hotel">
+                <p>Scandic Hotel</p>
+            </div>
+            <div class="tabcontent__destination-description">
+                <p>We start our journey from Oslo, the capital of Norway. On a walking tour, you will see the opera
+                    house, parliament, the royal palace, and more.</p>
+            </div>
+            <ul class="tabcontent__destination-included-list">
+                <li class="destination__included-item">
+                    <span class="destination__icon"><img src="img/icon/oslo/cutlery.png" alt="Cutlery" width="20" height="24"></span>
+                    <span class="destination__included-text">- Dinner included</span>
+                </li>
+                <li class="tabcontent__destination-included-item">
+                    <span class="destination__icon"><img src="img/icon/oslo/backpack.png" alt="Backpack" width="20" height="24"></span>
+                    <span class="destination__included-text">-Leave your backpack in the hotel</span>
+                </li>
+                <li class="tabcontent__destination-included-item">
+                    <span class="destination__icon"><img src="img/icon/oslo/plane.png" alt="Plane" width="20" height="24"></span>
+                    <span class="destination__included-text">- Transfer from the airport</span>
+                </li>
+            </ul>
+            <input class="destination__input" type="text" id="textInput_Oslo" name="Oslo" required minlength="4" maxlength="8" size="40" />
+            <button class="destination__button_booknow" type="button">Book now<img src="img/icon/button_booknow/whitearrow.png"
+                    alt="Arrow" width="55" height="25"></button>
+        </div>
+        <div id="Trondheim" class="tabcontent">
+            <div class="tabcontent__destination-image">
+                <img src="img/places-section/trondheim.jpg" alt="Trondheim" width="585">
+            </div>
+            <div class="tabcontent__destination-subtitle">
+                <h5>Trondheim - Second point</h5>
+            </div>
+            <div class="tabcontent__destination-title">
+                <h3>The First Capital With the Royal Residence</h3>
+            </div>
+            <div class="tabcontent__destination-duration">
+                <p><strong class="bold-text">2 nights</strong></p>
+            </div>
+            <div class="tabcontent__destination-hotel">
+                <p>Radisson Hotel</p>
+            </div>
+            <div class="tabcontent__destination-description">
+                <p>The main Christian landmark of Norway, the Nidaros Cathedral is located here. The architectural sign
+                    of the new era is a high TV tower with a revolving restaurant.</p>
+            </div>
+            <ul class="tabcontent__destination-included-list">
+                <li class="destination__included-item">
+                    <span class="destination__icon"><img src="img/icon/Trondheim/bus.png" alt="Bus" width="20" height="24"></span>
+                    <span class="destination__included-text">- Arriving at 9 a.m.</span>
+                </li>
+                <li class="destination__included-item">
+                    <span class="destination__icon"><img src="img/icon/Trondheim/camera.png" alt="Camera" width="20" height="24"></span>
+                    <span class="destination__included-text">- Instagram-friendly places</span>
+                    </li>
+                <li class="destination__included-item">
+                    <span class="destination__icon"><img src="img/icon/Trondheim/direction.png" alt="Direction" width="20" height="24"></span>
+                    <span class="destination__included-text">- 3-hours walking tour</span>
+                </li>
+            </ul>
+            <input class="destination__input" type="text" id="textInput_Trondheim" name="Trondheim" required minlength="4" maxlength="8" size="40" />
+            <button class="destination__button_booknow" type="button">Book now<img
+                    src="img/icon/button_booknow/whitearrow.png" alt="Arrow" width="55" height="25"></button>
+        </div>
+        <div id="Bodø" class="tabcontent">
+            <div class="tabcontent__destination-image">
+                <img src="img/places-section/Bodo.jpg" alt="Bodø" width="585">
+            </div>
+            <div class="tabcontent__destination-subtitle">
+                <h5>Bodø - Third point</h5>
+            </div>
+            <div class="tabcontent__destination-title">
+                <h3>Unique Fishing Spot in Fascinating Scenery</h3>
+            </div>
+            <div class="tabcontent__destination-duration">
+                <p><strong class="bold-text">2 nights</strong></p>
+            </div>
+            <div class="tabcontent__destination-hotel">
+                <p>Gronheim Guesthouse</p>
+            </div>
+            <div class="tabcontent__destination-description">
+                <p>We've left "urban" Norway, and Bodø is our first stop for no sightseeing. We will simply go fishing,
+                    enjoy the fresh air, and try dishes with salmon and trout.</p>
+            </div>
+            <ul class="destination__included-list">
+                <li class="destination__included-item">
+                    <span class="destination__icon"><img src="img/icon/Bodø/roadmap.png" alt="Roadmap" width="20" height="24"></span>
+                    <span class="destination__included-text">- Fishing spots</span>
+                </li>
+                <li class="destination__included-item">
+                    <span class="destination__icon"><img src="img/icon/Bodø/cutlery.png" alt="Cutlery" width="20" height="24"></span>
+                    <span class="destination__included-text">- Fish dinner</span>
+                </li>
+                <li class="destination__included-item">
+                    <span class="destination__icon"><img src="img/icon/Bodø/train.png" alt="Train" width="20" height="24"></span>
+                    <span class="destination__included-text">- Cable car ride</span>   
+                </li>
+            </ul>
+            <input class="destination__input" type="text" id="textInput_Bodø" name="Bodø" required minlength="4" maxlength="8" size="40" />
+            <button class="destination__button_booknow" type="button">Book now<img src="img/icon/button_booknow/whitearrow.png"
+                    alt="Arrow" width="55" height="25"></button>
+        </div>
+        <div id="Lofoten_islands" class="tabcontent">
+            <div class="tabcontent__destination-tabcontent">
+                <img src="img/places-section/Lofoten_islands.jpg" alt="Lofoten_islands" width="585">
+            </div>
+            <div class="tabcontent__destination-subtitle">
+                <h5>Lofoten Islands - Fourth point</h5>
+            </div>
+            <div class="tabcontent__destination-title">
+                <h3>Stunning Place Beyond the Arctic circle</h3>
+            </div>
+            <div class="tabcontent__destination-duration">
+                <p><strong class="bold-text">2 nights</strong></p>
+            </div>
+            <div class="tabcontent__destination-hotel">
+                <p>Cabinn Hotel</p>
+            </div>
+            <div class="tabcontent__destination-description">
+                <p>The islands are located in the harsh waters of the Norwegian Sea. It is a land of wild nature,
+                    majestic mountains, fjords, and long sandy beaches.</p>
+            </div>
+            <ul class="destination__included-list">
+                <li class="destination__included-item">
+                    <span class="destination__icon"><img src="img/icon/Lofoten_Islands/umbrella.png" alt="Umbrella" width="20" height="24"></span>
+                    <span class="destination__included-text">- Unique beaches</span>
+                </li>
+                <li class="destination__included-item">
+                    <span class="destination__icon"><img src="img/icon/Lofoten_Islands/vine.png" alt="Vine" width="20" height="24"></span>
+                    <span class="destination__included-text">- Tasting of local liqueurs</span>
+                </li>
+                <li class="ddestination__included-item">
+                    <span class="destination__icon"><img src="img/icon/Lofoten_Islands/ship.png" alt="Ship" width="20" height="24"></span>
+                    <span class="destination__included-text">- Boat trip</span>
+                </li>
+            </ul>
+            <input class="destination__input" type="text" id="textInput__Lofoten_islands" name="Lofoten_islands" required minlength="4" maxlength="8"
+                size="40" />
+            <button class="Lofoten_islands__button_booknow" type="button">Book now<img
+                    src="img/icon/button_booknow/whitearrow.png" alt="Arrow" width="55" height="25"></button>
+        </div>
+        <div id="tromsø" class="tabcontent">
+            <div class="tabcontent__destination-image">
+                <img src="img/places-section/Tromso.jpg" alt="Tromsø" width="585">
+            </div>
+            <div class="tabcontent__destination-subtitle">
+                <h5>Tromsø - Final point</h5>
+            </div>
+            <div class="tabcontent__destination-title">
+                <h3>Spot for Hunting the Northern Lights </h3>
+            </div>
+            <div class="tabcontent__destination-duration">
+                <p><strong class="bold-text">3 nights</strong></p>
+            </div>
+            <div class="tabcontent__destination-hotel">
+                <p>Scandic Hotel</p>
+            </div>
+            <div class="tabcontent__destination-description">
+                <p>The largest Norwegian city in the Arctic Circle is also called “Paris of the North”. The main
+                    attractions are the Polar Museum and the Arctic Cathedral.</p>
+            </div>
+            <ul class="destination__included-list">
+                <li class="destination__included-item">
+                    <span class="destination__icon"><img src="img/icon/Tromsø/suitcase.png" alt="Suitcase" width="20" height="24"></span>
+                    <span class="destination__included-text">- Free souvenirs</span>
+                </li>
+                <li class="destination__plane">
+                    <span class="destination__icon"><img src="img/icon/Tromsø/plane.png" alt="Plane" width="20" height="24"></span>
+                    <span class="destination__included-text">- International airport</span>
+                </li>
+                <li class="destination__telescop">
+                    <span class="destination__icon"><img src="img/icon/Tromsø/telescop.png" alt="Telescop" width="20" height="24"></span>
+                    <span class="destination__included-text">- Northern Lights</span>
+                </li>
+            </ul>
+            <input class="destination__input" type="text" id="textInput_Tromsø" name="Tromsø" required minlength="4" maxlength="8" size="40" />
+            <button class="destination__button_booknow" type="button">Book now<img
+                    src="img/icon/button_booknow/whitearrow.png" alt="Arrow" width="55" height="25"></button>
+        </div>
     </div>
-    <div class="places-subtitle">
-        <h2><strong>Where do we go?</strong></h2>
     </div>
-    <div class="places_text">
-        <p>10 days of travel and 5 unique places in Norway are waiting for us. Read more about each place from our itinerary below.</p>
     </div>
-<div class="country-section">
-    <div class="oslo">
-        <div class="oslo_button">
-            <button class="oslo" type="button">Oslo</button>
-        </div>
-        <div class="oslo_image">
-            <img src="img/places-section/oslo.jpg" alt="Oslo" width="585">
-        </div>
-        <div class="oslo_subtitle">
-            <h5>Oslo - First point</h5>
-        </div>
-        <div class="oslo_title">
-            <h3>The Capital and Largest City of Norway</h3>
-        </div>
-        <div class="oslo_nights">
-            <p><strong class="bold-text">1 night</strong></p>
-        </div>
-        <div class="oslo_hotel">
-            <p>Scandic Hotel</p>
-        </div>
-        <div class="oslo_description">
-            <p>We start our journey from Oslo, the capital of Norway. On a walking tour, you will see the opera house, parliament, the royal palace, and more.</p>
-        </div>
-        <ul class="oslo_services">
-           <li class="oslo_cutlery"><img src="img/icon/oslo/cutlery.png" alt="Cutlery" width="20" height="24">- Dinner included</li>
-           <li class="oslo_backpack"><img src="img/icon/oslo/backpack.png" alt="Backpack" width="20" height="24">- Leave your backpack in the hotel</li>
-           <li class="oslo_plane"><img src="img/icon/oslo/plane.png" alt="Plane" width="20" height="24">- Transfer from the airport</li>
-        </ul>
-        <input type="text" id="oslo" name="oslo" required minlength="4" maxlength="8" size="40" />
-        <button class="oslo_button_booknow" type="button">Book now<img src="img/icon/button_booknow/whitearrow.png" alt="Arrow" width="55" height="25"></button>
-    </div>
-    <div class="trondheim">
-        <div class="trondheim_button">
-            <button class="trondheim" type="button">Trondheim</button>
-        </div>
-        <div class="trondheim_image">
-            <img src="img/places-section/trondheim.jpg" alt="Trondheim" width="585">
-        </div>
-        <div class="trondheim_subtitle">
-            <h5>Trondheim - Second point</h5>
-        </div>
-        <div class="trondheim_title">
-            <h3>The First Capital With  the Royal Residence</h3>
-        </div>
-        <div class="trondheim_nights">
-            <p><strong class="bold-text">2 nights</strong></p>
-        </div>
-        <div class="trondheim_hotel">
-            <p>Radisson Hotel</p>
-        </div>
-        <div class="trondheim_description">
-            <p>The main Christian landmark of Norway, the Nidaros Cathedral is located here. The architectural sign of the new era is a high TV tower with a revolving restaurant.</p>
-        </div>
-        <ul class="trondheim_services">
-           <li class="trondheim_bus"><img src="img/icon/Trondheim/bus.png" alt="Bus" width="20" height="24">- Arriving at 9 a.m.</li>
-           <li class="trondheim_camera"><img src="img/icon/Trondheim/camera.png" alt="Camera" width="20" height="24">- Instagram-friendly places</li>
-           <li class="trondheim_direction"><img src="img/icon/Trondheim/direction.png" alt="Direction" width="20" height="24">- 3-hours walking tour</li>
-        </ul>
-        <input type="text" id="trondheim" name="trondheim" required minlength="4" maxlength="8" size="40" />
-        <button class="trondheim_button_booknow" type="button">Book now<img src="img/icon/button_booknow/whitearrow.png" alt="Arrow" width="55" height="25"></button>
-    </div>
-    <div class="bodø">
-        <div class="bodø_button">
-            <button class="bodø" type="button">Bodø</button>
-        </div>
-        <div class="bodø_image">
-            <img src="img/places-section/Bodo.jpg" alt="Bodø" width="585">
-        </div>
-        <div class="bodø_subtitle">
-            <h5>Bodø - Third point</h5>
-        </div>
-        <div class="bodø_title">
-            <h3>Unique Fishing Spot in Fascinating Scenery</h3>
-        </div>
-        <div class="bodø_nights">
-            <p><strong class="bold-text">2 nights</strong></p>
-        </div>
-        <div class="bodø_hotel">
-            <p>Gronheim Guesthouse</p>
-        </div>
-        <div class="bodø_description">
-            <p>We've left "urban" Norway, and Bodø is our first stop for no sightseeing. We will simply go fishing, enjoy the fresh air, and try dishes with salmon and trout.</p>
-        </div>
-        <ul class="bodø_services">
-           <li class="bodø_roadmap"><img src="img/icon/Bodø/roadmap.png" alt="Roadmap" width="20" height="24">- Fishing spots</li>
-           <li class="bodø_cutlery"><img src="img/icon/Bodø/cutlery.png" alt="Cutlery" width="20" height="24">- Fish dinner</li>
-           <li class="bodø_train"><img src="img/icon/Bodø/train.png" alt="Train" width="20" height="24">- Cable car ride</li>
-        </ul>
-        <input type="text" id="bodø" name="bodø" required minlength="4" maxlength="8" size="40" />
-        <button class="bodø_button_booknow" type="button">Book now<img src="img/icon/button_booknow/whitearrow.png" alt="Arrow" width="55" height="25"></button>
-    </div>
-    <div class="lofoten_islands">
-        <div class="lofoten_islands__button">
-            <button class="lofoten_islands" type="button">Lofoten Islands</button>
-        </div>
-        <div class="lofoten_islands__image">
-            <img src="img/places-section/Lofoten_islands.jpg" alt="lofoten_islands" width="585">
-        </div>
-        <div class="lofoten_islands__subtitle">
-            <h5>Lofoten Islands - Fourth point</h5>
-        </div>
-        <div class="lofoten_islands__title">
-            <h3>Stunning Place Beyond the Arctic circle</h3>
-        </div>
-        <div class="lofoten_islands__nights">
-            <p><strong class="bold-text">2 nights</strong></p>
-        </div>
-        <div class="lofoten_islands__hotel">
-            <p>Cabinn Hotel</p>
-        </div>
-        <div class="lofoten_islands__description">
-            <p>The islands are located in the harsh waters of the Norwegian Sea. It is a land of wild nature, majestic mountains, fjords, and long sandy beaches.</p>
-        </div>
-        <ul class="lofoten_islands__services">
-           <li class="lofoten_islands__umbrella"><img src="img/icon/Lofoten_Islands/umbrella.png" alt="Umbrella" width="20" height="24">- Unique beaches</li>
-           <li class="lofoten_islands__vine"><img src="img/icon/Lofoten_Islands/vine.png" alt="Vine" width="20" height="24">- Tasting of local liqueurs</li>
-           <li class="lofoten_islands__ship"><img src="img/icon/Lofoten_Islands/ship.png" alt="Ship" width="20" height="24">- Boat trip</li>
-        </ul>
-        <input type="text" id="lofoten_islands" name="lofoten_islands" required minlength="4" maxlength="8" size="40" />
-        <button class="lofoten_islands__button_booknow" type="button">Book now<img src="img/icon/button_booknow/whitearrow.png" alt="Arrow" width="55" height="25"></button>
-    </div>
-    <div class="tromsø">
-        <div class="tromsø_button">
-            <button class="tromsø" type="button">Tromsø</button>
-        </div>
-        <div class="tromsø_image">
-            <img src="img/places-section/Tromso.jpg" alt="tromsø" width="585">
-        </div>
-        <div class="tromsø_subtitle">
-            <h5>Tromsø - Final point</h5>
-        </div>
-        <div class="tromsø_title">
-            <h3>Spot for Hunting the Northern Lights </h3>
-        </div>
-        <div class="tromsø_nights">
-            <p><strong class="bold-text">3 nights</strong></p>
-        </div>
-        <div class="tromsø_hotel">
-            <p>Scandic Hotel</p>
-        </div>
-        <div class="tromsø_description">
-            <p>The largest Norwegian city in the Arctic Circle is also called “Paris of the North”. The main attractions are the Polar Museum and the Arctic Cathedral.</p>
-        </div>
-        <ul class="tromsø_services">
-           <li class="tromsø_suitcase"><img src="img/icon/Tromsø/suitcase.png" alt="Suitcase" width="20" height="24">- Free souvenirs</li>
-           <li class="tromsø_plane"><img src="img/icon/Tromsø/plane.png" alt="Plane" width="20" height="24">- International airport</li>
-           <li class="tromsø_telescop"><img src="img/icon/Tromsø/telescop.png" alt="Telescop" width="20" height="24">- Northern Lights </li>
-        </ul>
-        <input type="text" id="tromsø" name="tromsø" required minlength="4" maxlength="8" size="40" />
-        <button class="tromsø_button_booknow" type="button">Book now<img src="img/icon/button_booknow/whitearrow.png" alt="Arrow" width="55" height="25"></button>
-    </div>
-</div>
-</div>
+</section>

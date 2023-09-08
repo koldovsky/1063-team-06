@@ -107,11 +107,12 @@ img {
     max-width: 100%;
 }
 
-h1, h3 {
+h1 {
     font-family: 'Playfair Display', serif;
 }
 
-h3 {
+.header-subtitle {
+    font-family: 'Playfair Display', serif;
     font-size: 45px;
     line-height: 1.2;
     font-weight: 700;
