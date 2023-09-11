@@ -1,0 +1,13 @@
+.header {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url(../img/header/header-background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header__top {
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+    color: var(--white-color);
+}
