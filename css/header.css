@@ -16,10 +16,6 @@
     align-items: center;
     justify-content: space-between;
 }
-.header__logo-image {
-    max-width: 188px;
-    height: auto;
-}
 @media (max-width: 991px) {
     .header__burger-menu {
         z-index: 100;
@@ -90,7 +86,6 @@
         overflow: hidden;
     }
 }
-
 .trip__container {
     min-width: 320px;
     max-width: 1200px;
@@ -201,6 +196,20 @@
     }
 }
 @media (min-width: 992px) {
+    .trip__video-info {
+        width: 100%;
+    }
+    .header__logo-image {
+        max-width: 188px;
+        height: auto;
+    }
+    .header__arrow-icon,
+    .trip__arrow-icon {
+        width: 24px;
+    }
+    .trip__video-info img{
+        width: 20px;
+    }
     .trip__container {
         padding: 140px 14px 90px;;
     }
