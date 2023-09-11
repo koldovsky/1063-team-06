@@ -10,7 +10,7 @@
     max-width: 1200px;
     width: 100%;
     padding: 30px 24px;
-    margin: 0 auto;
+    margin: auto;
     color: var(--white-color);
     display: flex;
     align-items: center;
@@ -119,7 +119,7 @@
     max-width: 1200px;
     width: 100%;
     padding: 90px 14px;
-    margin: 0 auto;
+    margin: auto;
 }
 .trip__header {
     display: flex;
@@ -218,7 +218,7 @@
         background-attachment: scroll!important
     }
     .trip__container {
-        padding: 115px 14px 90px;;
+        padding: 115px 14px 90px;
     }
     .trip__title {
         font-size: 125px;
