@@ -1,0 +1,21 @@
+.tour-itinerary{
+    background-image: url(../img/tour_itinerary/background.png);
+    color: var(--subt-dark-background-color);
+    padding: 3%;
+}
+.tour-itinerary__description span{
+    color: var(--white-color);
+}
+
+
+.tour-itinerary__item img{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+.tour-itinerary__item{
+    display: inline-flex;
+    flex-flow: nowrap;
+}

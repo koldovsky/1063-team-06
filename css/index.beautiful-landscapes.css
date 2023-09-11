@@ -22,10 +22,19 @@
     margin-left: -15px;
 }
 
-.header-subtitle {
+.beautiful-landscapes__subtitle {
     margin-top: 20px;
     text-align: left;
     vertical-align: baseline;
+}
+
+.beautiful-landscapes__text-light-color {
+    color: var(--white-color);
+    font-size: 34px;
+}
+
+.beautiful-landscapes__text-accent-color {
+    font-size: 34px;
 }
 
 .beautiful-landscapes__text-content {

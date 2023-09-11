@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap');
 @import url(global.css);
 @import url(header.css);
 @import url(index.beautiful-landscapes.css);
+@import url(index.tour-itinerary.css);
 @import url(index.about-norway.css);
 @import url(footer.css);
 @import url(index.contact-us.css);
 @import url(index.faq.css);
+@import url(index.testimonials.css);
