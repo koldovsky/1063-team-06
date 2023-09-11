@@ -28,6 +28,15 @@
     vertical-align: baseline;
 }
 
+.beautiful-landscapes__text-light-color {
+    color: var(--white-color);
+    font-size: 34px;
+}
+
+.beautiful-landscapes__text-accent-color {
+    font-size: 34px;
+}
+
 .beautiful-landscapes__text-content {
     margin-top: 75px;
     padding-left: 15px;
