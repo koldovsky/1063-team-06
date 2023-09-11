@@ -17,6 +17,16 @@
     justify-content: space-between;
 }
 @media (max-width: 991px) {
+    .trip__video-info {
+        width: 100%;
+    }
+    .header__arrow-icon,
+    .trip__arrow-icon {
+        width: 24px;
+    }
+    .trip__video-info img{
+        width: 20px;
+    }
     .header__burger-menu {
         z-index: 100;
         display: block;
@@ -85,6 +95,16 @@
     .scroll-lock {
         overflow: hidden;
     }
+}
+.trip__video-info {
+    width: 100%;
+}
+.header__arrow-icon,
+.trip__arrow-icon {
+    width: 24px;
+}
+.trip__video-info img{
+    width: 20px;
 }
 .trip__container {
     min-width: 320px;
@@ -171,6 +191,20 @@
 }
 
 @media (min-width: 768px) {
+    .trip__video-info {
+        width: 100%;
+    }
+    .header__logo-image {
+        max-width: 188px;
+        height: auto;
+    }
+    .header__arrow-icon,
+    .trip__arrow-icon {
+        width: 24px;
+    }
+    .trip__video-info img{
+        width: 20px;
+    }
     .header {
         background-position: center;
         background-attachment: scroll!important
