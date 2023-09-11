@@ -1,7 +1,6 @@
-/* General Styles */
 #faq {
-    font-family: 'Roboto', sans-serif;  /* Font for general text */
-    font-size: 19px;  /* General font size */
+    font-family: 'Roboto', sans-serif;  
+    font-size: 19px;  
     background-color: #232428;
     color: #fff;
     padding: 60px 0 130px 0;
@@ -34,7 +33,6 @@ h2 {
     color:#505155;
 }
 
-/* Paragraphs */
 .plain-text {
     font-size: 19px;
     font-weight: 400;
@@ -44,11 +42,9 @@ h2 {
     color:#A7A7A9
 }
 
-/* Questions and Answers */
 .question-answer__block {
     margin-top: 2em;
 }
-
 
 .question {
     margin-bottom: 0.5em;
@@ -74,8 +70,6 @@ h2 {
     background: rgba(255, 255, 255, 0.2);
 }
 
-
-/* Image */
 .faq__right {
     height: 100%;  /* Or any specific height you'd like */
     overflow: hidden;  /* Hide the overflowing parts of the image */
@@ -87,7 +81,6 @@ h2 {
     object-fit: cover;
     object-position: 39.903% 50%;
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
