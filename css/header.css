@@ -16,7 +16,15 @@
     align-items: center;
     justify-content: space-between;
 }
+.header__logo-image {
+    max-width: 188px;
+    height: auto;
+}
 @media (max-width: 991px) {
+    .header__logo-image {
+        max-width: 188px;
+        height: auto;
+    }
     .trip__video-info {
         width: 100%;
     }
