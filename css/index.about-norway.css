@@ -1,5 +1,5 @@
 .about-norway{
-   
+    padding: 3%;
 }
 .about-norway__letter-with-image{
     display: flex;
@@ -7,6 +7,8 @@
     align-items: center;    
 }
 
-.about-norway__subtitle{
-    
+
+
+.about-norway__video{
+    width: 300px;
 }
