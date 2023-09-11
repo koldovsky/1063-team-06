@@ -114,7 +114,7 @@ h1 {
 
 .header-subtitle {
     font-family: 'Playfair Display', serif;
-    font-size: 45px;
+    font-size: 32px;
     line-height: 1.2;
     font-weight: 700;
     font-style: normal;
@@ -126,9 +126,9 @@ h2 span {
 }
 
 h2 {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     font-style: normal;
-    letter-spacing: .4px;
-    line-height: 21px;
+    letter-spacing: .36px;
+    line-height: 19.2px;
 }
