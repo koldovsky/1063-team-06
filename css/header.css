@@ -63,7 +63,7 @@
     .header__burger-menu span {
         top: calc(50% - 1px);
     }
-    
+
     .header__burger-menu.menu-open span {
         transform: scale(0);
     }
@@ -290,9 +290,6 @@
     .trip__title {
         font-size: 180px;
         line-height: 180px;
-    }
-    .trip__subtitle {
-        font-size: 13px;
     }
     .trip__video-info {
         font-size: 13px;

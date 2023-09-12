@@ -1,6 +1,6 @@
 #faq {
-    font-family: 'Roboto', sans-serif;  
-    font-size: 19px;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
     background-color: #232428;
     color: #fff;
     padding: 60px 0 130px 0;
@@ -18,9 +18,9 @@
     color: #EE2E14;
 }
 
-h2 {
+/* h2 {
     color:#A7A7A9;
-}
+} */
 
 .subtitle {
     font-family: 'Playfair Display', serif;

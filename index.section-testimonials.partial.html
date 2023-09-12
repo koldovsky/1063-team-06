@@ -1,52 +1,127 @@
 <section id="testimonials" class="testimonials">
-    <div class="testimonials__container">
-        <header class="testimonials__header header-content">
-            <h2 class="header-content__title">
-                <span class="header-content__title-prefix">━</span> TESTIMONIALS
-            </h2>
-            <p class="header-content__subtitle header-subtitle">Travelers Share Their Experience</p>
-            <p class="header-content__description">Norway leaves no one indifferent. Its stunning nature, friendly people, beautiful cities, and delicious cuisine will be remembered forever.</p>
-        </header>
-        <div class="testimonials__main-content">
-            <div class="testimonials__slider">
-                <div class="testimonials__swiper">
-                    <div class="testimonials__slide slide-content">
-                        <div class="slide-content__img-container">
-                            <img width="120" class="slide-content__image-user" src="img/testimonials/testimonials-user-man.png" alt="Illustration">
-                        </div>
-                        <p class="slide-content__user-name">Cole Tiers</p>
-                        <p class="slide-content__user-testimonial">I wanted to see Norway since childhood when I saw a stylish house right in the middle of the Norwegian forest in some magazine. I  thought then that I also want to live in such a house. This dream came true a few months ago on a tour of Norway. I am very happy! Thanks, guys!</p>
-                        <p class="slide-content__date">October 28, 2021</p>
-                    </div>
-                    <div class="testimonials__slide slide-content">
-                        <div class="slide-content__img-container">
-                            <img width="120" class="slide-content__image-user" src="img/testimonials/testimonials-user-family.png" alt="Illustration">
-                        </div>
-                        <p class="slide-content__user-name">Lilland Forester</p>
-                        <p class="slide-content__user-testimonial">We went on this tour with our daughter, she was 5 years old. I was worried that it would be difficult for her but everything went great. We spent nights in good hotels with excellent breakfasts. My daughter always had something to eat, and the nature in Norway fascinated her even more than us!</p>
-                        <p class="slide-content__date">May 13, 2022</p>
-                    </div>
-                    <div class="testimonials__slide slide-content">
-                        <div class="slide-content__img-container">
-                            <img width="120" class="slide-content__image-user" src="img/testimonials/testimonials-user-gull.jpeg" alt="Illustration">
-                        </div>
-                        <p class="slide-content__user-name">Alice Hendricks</p>
-                        <p class="slide-content__user-testimonial">I still can't believe I have seen the Northern Lights with my own eyes! That was incredible! When we arrived in Tromsø, it was constantly snowing, the weather was bad, and the guide said that we were out of luck, most likely. But on the last night, right at midnight, the clouds left, and I saw it! It was magical!</p>
-                        <p class="slide-content__date">January 12, 2022</p>
-                    </div>
-                </div>
-                <button class="testimonials__swiper-btn-next">
-                    <svg class="testimonials__arrow-svg" viewBox="0 0 30 30">
-                        <defs><path d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z" id="a-1693759297343"></path></defs><use fill-rule="nonzero" opacity=".8" xlink:href="#a-1693759297343"></use>
-                    </svg>
-                </button>
-                <button class="testimonials__swiper-btn-prev">
-                    <svg class="testimonials__arrow-svg" viewBox="0 0 30 30">
-                        <defs><path d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z" id="a-1693759297343"></path></defs><use fill-rule="nonzero" opacity=".8" xlink:href="#a-1693759297343"></use>
-                    </svg>
-                </button>
-                <div class="testimonials__swiper-pagging"></div>
-            </div>
+  <div class="testimonials__container">
+    <header class="testimonials__header header-content">
+      <h2 class="header-content__title">
+        <span class="header-content__title-prefix">━</span> TESTIMONIALS
+      </h2>
+      <p class="header-content__subtitle header-subtitle">
+        Travelers Share Their Experience
+      </p>
+      <p class="header-content__description">
+        Norway leaves no one indifferent. Its stunning nature, friendly people,
+        beautiful cities, and delicious cuisine will be remembered forever.
+      </p>
+    </header>
+    <div class="testimonials__main-content">
+      <div
+        id="swiper"
+        class="testimonials__slider carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#swiper"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#swiper"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#swiper"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
+        <div class="testimonials__swiper carousel-inner">
+          <div class="testimonials__slide slide-content carousel-item active">
+            <div class="slide-content__img-container">
+              <img
+                width="120"
+                class="slide-content__image-user"
+                src="img/testimonials/testimonials-user-man.png"
+                alt="Illustration"
+              />
+            </div>
+            <p class="slide-content__user-name">Cole Tiers</p>
+            <p class="slide-content__user-testimonial">
+              I wanted to see Norway since childhood when I saw a stylish house
+              right in the middle of the Norwegian forest in some magazine. I
+              thought then that I also want to live in such a house. This dream
+              came true a few months ago on a tour of Norway. I am very happy!
+              Thanks, guys!
+            </p>
+            <p class="slide-content__date">October 28, 2021</p>
+          </div>
+          <div class="testimonials__slide slide-content carousel-item">
+            <div class="slide-content__img-container">
+              <img
+                width="120"
+                class="slide-content__image-user"
+                src="img/testimonials/testimonials-user-family.png"
+                alt="Illustration"
+              />
+            </div>
+            <p class="slide-content__user-name">Lilland Forester</p>
+            <p class="slide-content__user-testimonial">
+              We went on this tour with our daughter, she was 5 years old. I was
+              worried that it would be difficult for her but everything went
+              great. We spent nights in good hotels with excellent breakfasts.
+              My daughter always had something to eat, and the nature in Norway
+              fascinated her even more than us!
+            </p>
+            <p class="slide-content__date">May 13, 2022</p>
+          </div>
+          <div class="testimonials__slide slide-content carousel-item">
+            <div class="slide-content__img-container">
+              <img
+                width="120"
+                class="slide-content__image-user"
+                src="img/testimonials/testimonials-user-gull.jpeg"
+                alt="Illustration"
+              />
+            </div>
+            <p class="slide-content__user-name">Alice Hendricks</p>
+            <p class="slide-content__user-testimonial">
+              I still can't believe I have seen the Northern Lights with my own
+              eyes! That was incredible! When we arrived in Tromsø, it was
+              constantly snowing, the weather was bad, and the guide said that
+              we were out of luck, most likely. But on the last night, right at
+              midnight, the clouds left, and I saw it! It was magical!
+            </p>
+            <p class="slide-content__date">January 12, 2022</p>
+          </div>
+        </div>
+        <button
+          class="testimonials__swiper-btn-prev carousel-control-prev"
+          type="button"
+          data-bs-target="#swiper"
+          data-bs-slide="prev"
+        >
+          <span class="testimonials__arrow-svg" aria-hidden="true">
+            <img src="img/testimonials/arrow-prev.svg" alt="arrow prev" />
+          </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="testimonials__swiper-btn-next carousel-control-next"
+          type="button"
+          data-bs-target="#swiper"
+          data-bs-slide="next"
+        >
+          <span class="testimonials__arrow-svg" aria-hidden="true">
+            <img src="img/testimonials/arrow-next.svg" alt="arrow next" />
+          </span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+  </div>
 </section>
