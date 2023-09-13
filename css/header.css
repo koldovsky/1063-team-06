@@ -6,11 +6,7 @@
     background-position: right;
 }
 .header__top {
-    min-width: 320px;
-    max-width: 1200px;
-    width: 100%;
     padding: 30px 24px;
-    margin: auto;
     color: var(--white-color);
     display: flex;
     align-items: center;
@@ -115,11 +111,7 @@
     width: 20px;
 }
 .trip__container {
-    min-width: 320px;
-    max-width: 1200px;
-    width: 100%;
     padding: 90px 14px;
-    margin: auto;
 }
 .trip__header {
     display: flex;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
 /* Reset css*/
 * {
     padding: 0;
@@ -23,18 +25,17 @@ a:active {
 
 html {
     font-size: 16px;
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 html,
 body {
     height: 100%;
-    min-width: 320px;
 }
 
 body {
     color: var(--main-text-dark-color);
+    font-family: 'Roboto', sans-serif!important;
 }
 
 input,
@@ -118,6 +119,14 @@ h2 {
     line-height: 19.2px;
 }
 
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
 @media (min-width: 768px) {
     .header-subtitle {
         font-size: 39px;
@@ -155,7 +164,4 @@ h2 {
     --input-text-gray-color: #ffffff8A;
     --white-translucent-color: #ffffff66;
     --black-translucent-color: #000000a6;
-
-    scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
 }

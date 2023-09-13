@@ -1,11 +1,53 @@
-.about-norway{
+.about-norway {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding: 3%;
 }
-.about-norway__letter-with-image{
+
+.about-norway__letter-with-image {
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+}
+
+.about-norway__title-prefix {
+    font-weight: bold;
+}
+
+.about-norway__subtitle {
+    font-size: 34px;
+    color: var(--main-text-dark-color);
+}
+.about-norway__fact {
+    padding-top: 60px;
+}
+.about-norway__fact-number {
+    font-size: 60px;
+    color: var(--background-dark-shade);
+}
+.about-norway__fact-number, .about-norway__fact-text{
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
-.about-norway__video{
-    width: 300px;
+.about-norway__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:768px){
+    .about-norway__title-description {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .about-norway__fact-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:992px){
+    .about-norway__fact-list{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
