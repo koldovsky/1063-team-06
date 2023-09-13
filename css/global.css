@@ -1,139 +1,5 @@
-:root {
-    --white-color: #ffffff;
-    --black-color: #000000;
-    --red-color: #ee2e14;
-    --pale-gray-color: #f7f7f7;
-    --main-text-dark-color: #505155;
-    --subt-white-background-color: #6f7380;
-    --subt-dark-background-color: #ffffff99;
-    --brand-blue-color: #14a9ee;
-    --background-dark-shade: #232428;
-    --caption-color-light-gray: #a9a9a9;
-    --text-gray-color: #707070;
-    --input-background-color: #2D2E34;
-    --background-light-gray-color: #ffffff0d;
-    --input-text-gray-color: #ffffff8A;
-    --white-translucent-color: #ffffff66;
-    --black-translucent-color: #000000a6;
-    --middle-gray-color:rgb(80,81,85);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
-    scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Reset css*/
-* {
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    
-}
-  
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-  
-:focus,
-:active {
-    outline: none;
-}
-  
-a:focus,
-a:active {
-    outline: none;
-}
-
-html {
-    font-size: 16px;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-  
-html,
-body {
-    height: 100%;
-    min-width: 320px;
-}
-  
-body {
-    color: var(--main-text-dark-color);
-}
-  
-input,
-button,
-textarea {
-    font-size: inherit;
-}
-  
-button {
-    cursor: pointer;
-    color: inherit;
-    background-color: inherit;
-}
-  
-a {
-    color: inherit;
-}
-  
-a:link,
-a:visited {
-    text-decoration: none;
-}
-  
-a:hover {
-    text-decoration: none;
-}
-  
-ul li {
-    list-style: none;
-}
-  
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: inherit;
-    font-size: inherit;
-}
-  
-a {
-    display: inline-block;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    width: 100%;
-}
-
-h1 {
-    font-family: 'Playfair Display', serif;
-}
-
-.header-subtitle {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    line-height: 1.2;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: .5px;
-}
-
-h2 span {
-    color: var(--red-color);
-}
-
-h2 {
-    font-size: 12px;
-    font-weight: 500;
-    font-style: normal;
-    letter-spacing: .36px;
-    line-height: 19.2px;
-}
 /* Reset css*/
 * {
     padding: 0;
@@ -171,6 +37,7 @@ body {
 
 body {
     color: var(--main-text-dark-color);
+    font-family: 'Roboto', sans-serif!important;
 }
 
 input,
@@ -252,6 +119,14 @@ h2 {
     font-style: normal;
     letter-spacing: .36px;
     line-height: 19.2px;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
 }
 
 @media (min-width: 768px) {
