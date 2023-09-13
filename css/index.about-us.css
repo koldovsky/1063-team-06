@@ -39,4 +39,17 @@
 .ten-days {
     color:var(--brand-blue-color);
 }
+.us__steps {
+  font-size:22px;
+  font-weight: 500;
+
+}
+.us__text {
+    font-size: 14px;
+    line-height: 22.4px;
+    color: var(--middle-gray-color);
+}
+
+
+
 
