@@ -6,8 +6,6 @@
 .tour-itinerary__description span{
     color: var(--white-color);
 }
-
-
 .tour-itinerary__item img{
     width: 100px;
     display: flex;
