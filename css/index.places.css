@@ -1,22 +1,31 @@
-/*.places {
-  background-image: url(../img/places-section/background_places.png);
+.places {
+  background: url(../img/places-section/background_places.png) 50% 50%;
   background-size: cover;
   background-position: center; 
+  background-color: var(--white-color); 
+  padding: 60px 0 110px;
 }
 
 .places__container {
-  padding-right: 24px;
-  padding-left: 24px;
-}
-
-.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .header-subtitle {
+  font-family: 'Playfair Display', serif;
+  color: var(--main-text-dark-color);
+  font-size: 34px;
 }
 
 .header-content__description {
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 1em;
+  margin-top: 25px;
 }
+/*
 
 .tab {
     overflow: hidden;
