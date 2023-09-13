@@ -11,18 +11,18 @@
     text-transform: uppercase;
 }
 .about-us__total {
-    
+
     background-image: url(../img/norway-wave.jpg);
 }
 .about-us__title {
     font-family: 'Playfair Display', serif;
     font-size: 34px;
-    color:var(--middle-gray-color);
+    color:var(--main-text-dark-color);
 }
 .about-us__offers {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--white-color);
     padding: 20px;
 }
 .divider__title {
@@ -32,7 +32,7 @@
 .us__tours {
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
-    color: var(--middle-gray-color);
+    color: var(--main-text-dark-color);
     line-height: 32.3px;
     margin-bottom: 25px;
 }
@@ -47,7 +47,7 @@
 .us__text {
     font-size: 14px;
     line-height: 22.4px;
-    color: var(--middle-gray-color);
+    color: var(--main-text-dark-color);
 }
 
 
