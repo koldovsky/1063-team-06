@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
 /* Reset css*/
 * {
     padding: 0;
@@ -35,6 +37,7 @@ body {
 
 body {
     color: var(--main-text-dark-color);
+    font-family: 'Roboto', sans-serif!important;
 }
 
 input,
