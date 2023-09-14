@@ -12,20 +12,44 @@
     align-items: center;
     justify-content: space-between;
 }
+.header__logo-container {
+    position: relative;
+    z-index: 100;
+}
 .header__logo-image {
     max-width: 188px;
     height: auto;
+}
+.header__link-container {
+    max-width: 110px;
+    margin: auto;
+}
+.header__link {
+    padding: 2px 13px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12.6px;
+    line-height: 12.6px;
+    font-weight: 700;
+}
+.header__link:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
 }
 @media (max-width: 991px) {
     .header__logo-image {
         max-width: 188px;
         height: auto;
     }
+    .header__link-container {
+        margin-top: 30px;
+    }
     .trip__video-info {
         width: 100%;
     }
-    .header__arrow-icon,
-    .trip__arrow-icon {
+    .arrow-icon {
         width: 24px;
     }
     .trip__video-info img{
@@ -60,14 +84,14 @@
         top: calc(50% - 1px);
     }
 
-    .header__burger-menu.menu-open span {
+    .header__burger-menu.active span {
         transform: scale(0);
     }
-    .header__burger-menu.menu-open::before {
+    .header__burger-menu.active::before {
         transform: rotate(-45deg);
         top: calc(50% - 1px);
     }
-    .header__burger-menu.menu-open::after {
+    .header__burger-menu.active::after {
         transform: rotate(45deg);
         bottom: calc(50% - 1px);
     }
@@ -85,15 +109,21 @@
         transition: left 0.3s ease 0s;
         z-index: 99;
     }
+    .header__menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
     .header__menu-item {
         color: white;
-        font-size: 22px;
+        font-size: 17px;
         font-weight: 500;
     }
-    .header__menu.menu-open {
+    .header__menu.active {
         left: 0;
     }
-    .header__menu.menu-open::before {
+    .header__menu.active::before {
         left: 0;
     }
     .scroll-lock {
@@ -103,8 +133,7 @@
 .trip__video-info {
     width: 100%;
 }
-.header__arrow-icon,
-.trip__arrow-icon {
+.arrow-icon {
     width: 24px;
 }
 .trip__video-info img{
@@ -189,6 +218,9 @@
     font-weight: 700;
     line-height: 14px;
 }
+.trip__read-more-link:hover {
+    text-decoration: underline;
+}
 
 @media (min-width: 768px) {
     .trip__video-info {
@@ -198,8 +230,7 @@
         max-width: 188px;
         height: auto;
     }
-    .header__arrow-icon,
-    .trip__arrow-icon {
+    .arrow-icon {
         width: 24px;
     }
     .trip__video-info img{
@@ -266,18 +297,6 @@
         font-size: 14px;
         font-weight: 600;
         line-height: 24px;
-    }
-    .header__link-container {
-        padding: 2px 13px;
-        border: 2px solid white;
-    }
-    .header__link {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 12.6px;
-        line-height: 12.6px;
-        font-weight: 700;
     }
     .trip__title {
         font-size: 180px;
