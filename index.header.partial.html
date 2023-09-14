@@ -1,38 +1,49 @@
 <header class="header">
-    <div class="header__top">
+    <div class="header__top container">
         <div class="header__logo-container">
             <a href="#" class="header__logo-link">
                 <img src="img/header/logo-norway.png" alt="Logo Norway" class="header__logo-image">
             </a>
         </div>
         <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">About Us</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Itinerary</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Testimonials</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Blog</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Contacts</a>
-                </li>
-            </ul>
+            <button class="header__burger-menu" type="button">
+                <span class="header__burger-line"></span>
+            </button>
+            <div class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">About Us</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Itinerary</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#testimonials" class="header__menu-link">Testimonials</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Blog</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Contacts</a>
+                    </li>
+                </ul>
+                <div class="header__link-container">
+                    <a href="#" class="header__link">
+                        <span>Join Us</span>
+                        <span class="arrow-icon">
+                            <svg width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:100%" height="100%">
+                                <path d="M81.032,50c0,1.776-1.439,3.215-3.215,3.215H17.795c-1.776,0-3.215-1.439-3.215-3.215l0,0c0-1.776,1.439-3.215,3.215-3.215  h60.023C79.593,46.785,81.032,48.224,81.032,50L81.032,50z" fill="currentColor"/>
+                                <path d="M80.091,52.273c-1.256,1.256-3.291,1.256-4.547,0L65.435,42.165c-1.256-1.256-1.256-3.291,0-4.547l0,0  c1.256-1.256,3.291-1.256,4.547,0l10.109,10.109C81.346,48.982,81.346,51.018,80.091,52.273L80.091,52.273z" fill="currentColor"/>
+                                <path d="M65.435,62.382c-1.256-1.256-1.256-3.291,0-4.547l10.109-10.109c1.256-1.256,3.291-1.256,4.547,0l0,0  c1.256,1.256,1.256,3.291,0,4.547L69.982,62.382C68.726,63.638,66.691,63.638,65.435,62.382L65.435,62.382z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
         </nav>
-        <div class="header__link-container">
-            <a href="#" class="header__link">
-                <span>Join Us</span>
-                <span><img width="24" src="img/header/arrow-right.svg" alt="arrow vector" class="header__arrow-icon"></span>
-            </a>
-        </div>
     </div>
     <div class="header__body trip">
-        <div class="trip__container">
+        <div class="trip__container container">
             <div class="trip__header">
                 <h1 class="trip__title">Norway</h1>
                 <h2 class="trip__subtitle"><span>━</span> YOUR PERFECT JOURNEY TO</p>
@@ -44,9 +55,9 @@
                     <a href="#" class="trip__video-link">Watch the promo video!</a>
                 </div>
                 <div class="trip__video-description">
-                    <div class="trip__video-thumbnail">
+                    <a href="#" class="trip__video-thumbnail">
                         <img src="img/header/header-video-pictures.jpeg" alt="Illustration" class="trip__video-pictures">
-                    </div>
+                    </a>
                     <p class="trip__video-subtitle">Next Trip to Norway</p>
                     <div class="trip__info">
                         <p class="trip__price">$2300</p>
@@ -54,11 +65,19 @@
                     </div>
                     <p class="trip__summary">10 days of travel and 5 unique places in Norway are waiting for us ...</p>
                     <div class="trip__read-more">
-                        <a href="#" class="trip__read-more-link">Read more</a>
-                        <span><img width="24" src="img/header/arrow-right.svg" alt="arrow vector" class="trip__arrow-icon"></span>
+                        <a href="#" class="trip__read-more-link">
+                            <span>Read more</span>
+                            <span class="arrow-icon">
+                                <svg width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:100%" height="100%">
+                                    <path d="M81.032,50c0,1.776-1.439,3.215-3.215,3.215H17.795c-1.776,0-3.215-1.439-3.215-3.215l0,0c0-1.776,1.439-3.215,3.215-3.215  h60.023C79.593,46.785,81.032,48.224,81.032,50L81.032,50z" fill="currentColor"/>
+                                    <path d="M80.091,52.273c-1.256,1.256-3.291,1.256-4.547,0L65.435,42.165c-1.256-1.256-1.256-3.291,0-4.547l0,0  c1.256-1.256,3.291-1.256,4.547,0l10.109,10.109C81.346,48.982,81.346,51.018,80.091,52.273L80.091,52.273z" fill="currentColor"/>
+                                    <path d="M65.435,62.382c-1.256-1.256-1.256-3.291,0-4.547l10.109-10.109c1.256-1.256,3.291-1.256,4.547,0l0,0  c1.256,1.256,1.256,3.291,0,4.547L69.982,62.382C68.726,63.638,66.691,63.638,65.435,62.382L65.435,62.382z" fill="currentColor"/>
+                                </svg>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
   </header>

@@ -1,3 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Reset css*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: var(--main-text-dark-color);
+    font-family: 'Roboto', sans-serif!important;
+}
+
+input,
+button,
+textarea {
+    font-size: inherit;
+}
+
+button {
+    cursor: pointer;
+    color: inherit;
+    background-color: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+dl,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+a {
+    display: inline-block;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.header-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .5px;
+}
+
+h2 span {
+    color: var(--red-color);
+}
+
+h2 {
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .36px;
+    line-height: 19.2px;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .header-subtitle {
+        font-size: 39px;
+        line-height: 47px;
+        letter-spacing: 1.17px;
+    }
+}
+
+@media (min-width: 992px) {
+    h2 {
+        font-size: 13px;
+    }
+
+    .header-subtitle {
+        font-size: 45px;
+        line-height: 54px;
+        letter-spacing: 1.35px;
+    }
+}
+
 :root {
     --white-color: #ffffff;
     --black-color: #000000;
@@ -15,119 +164,4 @@
     --input-text-gray-color: #ffffff8A;
     --white-translucent-color: #ffffff66;
     --black-translucent-color: #000000a6;
-
-    scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Reset css*/
-* {
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-}
-  
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-  
-:focus,
-:active {
-    outline: none;
-}
-  
-a:focus,
-a:active {
-    outline: none;
-}
-
-html {
-    font-size: 16px;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-  
-html,
-body {
-    height: 100%;
-    min-width: 320px;
-}
-  
-body {
-    color: var(--main-text-dark-color);
-}
-  
-input,
-button,
-textarea {
-    font-size: inherit;
-}
-  
-button {
-    cursor: pointer;
-    color: inherit;
-    background-color: inherit;
-}
-  
-a {
-    color: inherit;
-}
-  
-a:link,
-a:visited {
-    text-decoration: none;
-}
-  
-a:hover {
-    text-decoration: none;
-}
-  
-ul li {
-    list-style: none;
-}
-  
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: inherit;
-    font-size: inherit;
-}
-  
-a {
-    display: inline-block;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-h1 {
-    font-family: 'Playfair Display', serif;
-}
-
-.header-subtitle {
-    font-family: 'Playfair Display', serif;
-    font-size: 45px;
-    line-height: 1.2;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: .5px;
-}
-
-h2 span {
-    color: var(--red-color);
-}
-
-h2 {
-    font-size: 13px;
-    font-weight: 500;
-    font-style: normal;
-    letter-spacing: .4px;
-    line-height: 21px;
 }
