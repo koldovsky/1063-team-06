@@ -1,11 +1,11 @@
 @import url(global.css);
 @import url(header.css);
-@import url(index.beautiful-landscapes.css);
+@import url(index.about-us.css);
 @import url(index.tour-itinerary.css);
 @import url(index.about-norway.css);
-@import url(footer.css);
-@import url(index.contact-us.css);
-@import url(index.faq.css);
-@import url(index.testimonials.css);
 @import url(index.places.css);
-@import url(index.about-us.css);
+@import url(index.beautiful-landscapes.css);
+@import url(index.faq.css);
+@import url(index.contact-us.css);
+@import url(index.testimonials.css);
+@import url(footer.css);
