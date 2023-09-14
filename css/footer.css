@@ -1,5 +1,12 @@
 .footer{
      background-image: url(../img/footer/footer-background.jpg);
-     background-size: cover;
-     background-position: center; 
+     /* background-size: cover;
+     background-position: center; */
+     background-position: 1435px 67%;
+     background-size: 162rem; 
+}
+
+.footer__norway-logo {
+     max-width: 176;
+     height: auto;
 }
