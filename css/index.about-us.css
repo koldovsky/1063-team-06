@@ -2,7 +2,7 @@
     font-size: 12px;
     color:var(--red-color);
     font-weight:bold;
-    margin-right: 5px;git 
+    margin-right: 5px;
 }
 .us__title {
     font-family: 'Roboto', sans-serif;
@@ -62,7 +62,7 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
-    
+
 }
 .instructions__pick {
     background-color: var(--white-color);

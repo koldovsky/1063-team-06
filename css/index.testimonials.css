@@ -13,13 +13,7 @@
     margin: 50px auto 0;
     padding: 0 10px;
 }
-.header-content__subtitle {
-    margin-top: 20px;
-    font-size: 34px;
-    line-height: 40px;
-    letter-spacing: 1px;
-}
-.header-content__description {
+.testimonials .header-content__description {
     font-size: 19px;
     font-weight: 300;
     line-height: 32px;
@@ -131,11 +125,6 @@
 @media (min-width: 768px) {
     .testimonials__slide {
         padding: 10px 46px;
-    }
-    .header-content__subtitle {
-        font-size: 39px;
-        line-height: 47px;
-        letter-spacing: 1.17px;
     }
     .slide-content__img-container {
         max-width: 120px;
