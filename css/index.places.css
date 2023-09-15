@@ -61,22 +61,22 @@
   }
   
   .tablinks:hover {
-  border-bottom: 2px solid #ee2e14;
-  color: var(--main-text-dark-color);
+    border-bottom: 2px solid #ee2e14;
+    color: var(--main-text-dark-color);
   }
   
   .tablinks.active {
-  border-bottom: 2px solid #ee2e14;
-  color: var(--main-text-dark-color);
+    border-bottom: 2px solid #ee2e14;
+    color: var(--main-text-dark-color);
   }
   
   .tabcontent {
-  display: none;
-  position: relative;
-  top: 40px;
-  left: 0;
-  right: 0;
-  bottom: 0;
+    display: none;
+    position: relative;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
   .tabcontent__destination-image {
@@ -88,3 +88,23 @@
     
   }
   */
+  @media (min-width: 375px) {
+    .navigation-tab {
+      flex-flow: row wrap;
+      flex-wrap: nowrap;
+      word-wrap: break-word;
+      overflow-x: auto;
+      padding: 0;
+    }
+  }
+   /* 
+  }
+  @media (min-width: 768px) {
+    .navigation-tab {
+      
+    }
+
+  }
+   @media (min-width: 992px) {
+   } 
+   */
