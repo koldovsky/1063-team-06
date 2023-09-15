@@ -2,7 +2,7 @@
     font-size: 12px;
     color:var(--red-color);
     font-weight:bold;
-    margin-right: 5px;
+    margin-right: 5px;git 
 }
 .us__title {
     font-family: 'Roboto', sans-serif;
@@ -18,13 +18,17 @@
 .about-us__title {
     font-family: 'Playfair Display', serif;
     font-size: 34px;
+    font-weight: 500;
     color:var(--main-text-dark-color);
+    background-color: var(--white-color);
 }
 .about-us__offers {
     display: flex;
     flex-direction: column;
     background-color: var(--white-color);
-    padding: 20px;
+    margin-right: 25px;
+    margin-bottom: 0;
+    padding: 10px;
 }
 .divider__title {
     display:flex;
@@ -50,6 +54,40 @@
     line-height: 22.4px;
     color: var(--main-text-dark-color);
 }
+.instructions__contacts {
+    background-color: var(--white-color);
+    margin-right: 25px;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    
+}
+.instructions__pick {
+    background-color: var(--white-color);
+    margin-right: 25px;
+    padding: 10px;
+}
+.instructions__start {
+    background-color: var(--white-color);
+    margin-right: 25px;
+    padding: 10px;
+}
+.first-step {
+    width: 83px;
+    height: auto;
+    align-self: center;
+}
+.second-step {
+    width: 95px;
+    height: auto;
+}
+.third-step {
+    width: 85px;
+    height: auto;
+}
+
 
 
 
