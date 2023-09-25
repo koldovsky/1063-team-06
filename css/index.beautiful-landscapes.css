@@ -100,19 +100,21 @@
 .landscapes__carousel-btn-next {
     position: absolute;
     top: 50%;
-    z-index: 10;
+    z-index: 1;
     cursor: pointer;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    padding: 6px;
+    transform: matrix(1, 0, 0, 1, 16, -16);
+    width: 32px;
+    height: 32px;
+    transition-duration: 0.2s;
     background-color: var(--white-color);
-    opacity: .8;
+    color: rgba(0, 0, 0, 0);
+    opacity: .85;
     border-radius: 50%;
 }
 
 .landscapes__carousel-btn-prev {
     left: 0;
+    transform: rotate(180deg);
 }
 
 .landscapes__carousel-btn-next {
