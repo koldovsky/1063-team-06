@@ -9,17 +9,17 @@ function setOnTabClick(item) {
         const tabId = currentBtn.getAttribute("data-tab");
         const currentTab = document.querySelector(tabId);
 
-        if ( !currentBtn.classList.contains('active') ) {
+        if ( !currentBtn.classList.contains('active-tab') ) {
             tabsBtn.forEach(function(item) {
-                item.classList.remove('active');
+                item.classList.remove('active-tab');
             });
     
             tabsContent.forEach(function(item) {
-                item.classList.remove('active');
+                item.classList.remove('active-tab');
             });
     
-            currentBtn.classList.add('active');
-            currentTab.classList.add('active');
+            currentBtn.classList.add('active-tab');
+            currentTab.classList.add('active-tab');
         }
     });
 }
