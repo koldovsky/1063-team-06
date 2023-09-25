@@ -1,4 +1,4 @@
 document.addEventListener('partialsLoaded', () => {
-    import('./index.beautiful-landscapes.partial.js')
+    import('./beautiful-landscapes-carousel.js')
     import('./tabs.js');
 });

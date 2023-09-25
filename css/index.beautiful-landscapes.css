@@ -87,6 +87,16 @@
     width: 272px;
 }
 
+.landscapes__carousel-btn-prev {
+    height: 20px;
+    width: 20px;
+}
+
+.landscapes__carousel-btn-next {
+    height: 20px;
+    width: 20px;
+}
+
 /* quote */
 .quote__wrapper {
     padding-top: 45px;

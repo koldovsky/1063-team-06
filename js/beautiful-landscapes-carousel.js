@@ -35,4 +35,14 @@ function prevSlide() {
     renderSlide();
 }
 
+// setInterval(nextSlide, 3000);
+
+
 renderSlide();
+
+const nextBtn = document.querySelector('.landscapes__carousel-btn-next');
+nextBtn.addEventListener('click', nextSlide);
+
+const prevBtn = document.querySelector('.landscapes__carousel-btn-prev');
+prevBtn.addEventListener('click', prevSlide);
+
