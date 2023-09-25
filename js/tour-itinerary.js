@@ -1,5 +1,3 @@
-console.log('hello tour-itinerary')
-
 const tourItineraryInfo=[
     {
         id: 1,
@@ -22,3 +20,20 @@ const tourItineraryInfo=[
                 It is impossible not to fall in love with it!`,
     },
 ];
+
+renderTourItineraryInfo(tourItineraryInfo);
+
+function renderTourItineraryInfo(tourItineraryInfo) {
+    const tourItineraryInfoContainer = document.querySelector('.tour-itinerary__info-list');
+    tourItineraryInfo.innerHTML = ' ';
+    for (const tourInfo of tourItineraryInfo) {
+        tourItineraryInfoContainer.innerHTML +=
+            `<li style= "list-style-type: none" class="tour-itinerary__item">
+                <img src=${tourInfo.image} alt="License">
+                <div>
+                    <p><span>${tourInfo.title}</span></p>
+                    <p>${tourInfo.text}</p>
+                </div>
+            </li>`
+    };
+};
