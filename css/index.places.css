@@ -52,6 +52,15 @@
   color: var(--caption-color-light-gray);
 }
 
+.navigation-tab__tablinks:hover {
+  color: var(--black-color);
+}
+
+.active {
+  border-bottom: 1px solid var(--red-color);
+  color: var(--black-color);
+}
+
 .tabcontent {
   width: 100%;
   padding: 0px 9px;
