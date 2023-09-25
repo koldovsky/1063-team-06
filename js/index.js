@@ -1,4 +1,5 @@
 document.addEventListener("partialsLoaded", () => {
-  import("./tabs.js");
   import("./menu-burger.js");
+  import("./index.beautiful-landscapes.partial.js");
+  import("./tabs.js");
 });
