@@ -56,7 +56,7 @@
   color: var(--black-color);
 }
 
-.active {
+.active-tab {
   border-bottom: 1px solid var(--red-color);
   color: var(--black-color);
 }
