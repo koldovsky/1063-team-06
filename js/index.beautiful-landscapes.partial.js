@@ -1,9 +1,9 @@
 const slides = [
-    '<div><img src="img/landscapes/landscapes-carousel-1.jpg" alt="Red ship in a fjord"></div>'
-    '<div><img src="img/landscapes/landscapes-carousel-2.jpg" alt="Mountains in snow"></div>'
-    '<div><img src="img/landscapes/landscapes-carousel-3.jpg" alt="The man on the top of the mountain"></div>'
-    '<div><img src="img/landscapes/landscapes-carousel-4.png" alt="The view on the fjord"></div>'
-    '<div><img src="img/landscapes/landscapes-carousel-5.jpg" alt="Colored houses between mountains"></div>'
+    '<div><img src="img/landscapes/landscapes-carousel-1.jpg" alt="Red ship in a fjord"></div>',
+    '<div><img src="img/landscapes/landscapes-carousel-2.jpg" alt="Mountains in snow"></div>',
+    '<div><img src="img/landscapes/landscapes-carousel-3.jpg" alt="The man on the top of the mountain"></div>',
+    '<div><img src="img/landscapes/landscapes-carousel-4.png" alt="The view on the fjord"></div>',
+    '<div><img src="img/landscapes/landscapes-carousel-5.jpg" alt="Colored houses between mountains"></div>',
     '<div><img src="img/landscapes/landscapes-carousel-6.jpg" alt="Red houses between mountains"></div>'
 ];
 
