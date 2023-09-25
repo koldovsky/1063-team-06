@@ -1,3 +1,4 @@
-document.addEventListener('partialsLoaded', () => {
-    import('./tabs.js');
+document.addEventListener("partialsLoaded", () => {
+  import("./tabs.js");
+  import("./menu-burger.js");
 });
