@@ -70,16 +70,53 @@
 }
 
 .landscapes__carousel {
-min-height: 350px;
-display: grid;
+/* min-height: 350px; */
+/* display: grid;
 grid-template-columns: 40px 1fr 40px;
 align-items: center;
+gap: 5px; */
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5px;
 }
 
 .landscapes__carousel-slide {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.landscapes__carousel-btn-prev {
+    left: 7px;
+}
+.landscapes__carousel-btn-prev,
+.landscapes__carousel-btn-next {
+    position: absolute;
+    /* top: 50%;
+    z-index: 1;
+    cursor: pointer;
+    transform: matrix(1, 0, 0, 1, 16, -16);
+    width: 32px;
+    height: 32px;
+    transition-duration: 0.2s;
+    background-color: var(--white-color);
+    color: rgba(0, 0, 0, 0);
+    opacity: .85;
+    border-radius: 50%;  */
+}
+
+.landscapes__carousel-indicators {
+    position: absolute;
+    padding: 50px;
+    height: 5px;
+    content: "";
+}
+
+.landscapes__carousel-indicator {
+    content: "";
+    height: 5px;
+    width: 5px;
 }
 
 /* .carousel__image {
