@@ -7,14 +7,10 @@
     background-color: var(--background-dark-shade);
 }
 
-.beautiful-landscapes__text-content,
+.beautiful-landscapes__text-content, 
 .beautiful-landscapes__title-text {
     color: rgba(255,255,255,0.6);
 }
-
-/* .beautiful-landscapes__title-prefix {
-
-} */
 
 .beautiful-landscapes__container {
     padding-right: 24px;
@@ -26,19 +22,10 @@
     margin-left: -15px;
 }
 
-.beautiful-landscapes__subtitle {
+.header-subtitle {
     margin-top: 20px;
     text-align: left;
     vertical-align: baseline;
-}
-
-.beautiful-landscapes__text-light-color {
-    color: var(--white-color);
-    font-size: 34px;
-}
-
-.beautiful-landscapes__text-accent-color {
-    font-size: 34px;
 }
 
 .beautiful-landscapes__text-content {
@@ -85,78 +72,6 @@
 .carousel__image {
     height: 244px;
     width: 272px;
-}
-
-.landscapes__carousel {
-    /* display: grid;
-    min-height: 700px;
-    grid-template-columns: 40px 1fr 40px;
-    gap: 5px;
-    align-items: center; */
-    position: relative;
-}
-
-.landscapes__carousel-btn-prev,
-.landscapes__carousel-btn-next {
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    cursor: pointer;
-    transform: matrix(1, 0, 0, 1, 16, -16);
-    width: 32px;
-    height: 32px;
-    transition-duration: 0.2s;
-    background-color: var(--white-color);
-    color: rgba(0, 0, 0, 0);
-    opacity: .85;
-    border-radius: 50%;
-}
-
-.landscapes__carousel-btn-prev {
-    left: 0;
-    transform: rotate(180deg);
-}
-
-.landscapes__carousel-btn-next {
-    right: 0;
-}
-
-.landscapes__carousel-slide {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-}
-
-.landscapes__carousel-indicators {
-    padding: 15px 0;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.landscapes__carousel-indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    cursor: pointer;
-}
-
-.landscapes__carousel-indicator--active {
-    background-color: #000;
-}
-
-.slide__image-container {
-    height: 100%;
-    max-width: 700px;
-}
-
-.slide__image-container img {
-    object-position: 59.912% 100%;
-    object-fit: cover;
 }
 
 /* quote */
@@ -250,3 +165,4 @@
     opacity: .2;
     background-color: var(--white-color);
 }
+
