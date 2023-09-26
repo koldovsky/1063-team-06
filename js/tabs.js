@@ -13,11 +13,11 @@ function setOnTabClick(item) {
             tabsBtn.forEach(function(item) {
                 item.classList.remove('active-tab');
             });
-    
+
             tabsContent.forEach(function(item) {
                 item.classList.remove('active-tab');
             });
-    
+
             currentBtn.classList.add('active-tab');
             currentTab.classList.add('active-tab');
         }
