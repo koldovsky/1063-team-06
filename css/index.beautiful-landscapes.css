@@ -28,6 +28,15 @@
     vertical-align: baseline;
 }
 
+.beautiful-landscapes__text-light-color {
+    color: var(--white-color);
+    font-size: 34px;
+}
+
+.beautiful-landscapes__text-accent-color {
+    font-size: 34px;
+}
+
 .beautiful-landscapes__text-content {
     margin-top: 75px;
     padding-left: 15px;
@@ -79,44 +88,81 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 5px;
+padding-left: 15px;
+padding-right: 15px;
+position: relative;
 }
+
+.landscapes__carousel-btn-prev,
+.landscapes__carousel-btn-next {
+    position: absolute;
+    align-items: flex-start;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    flex-shrink: 0;
+    z-index: 1;
+    cursor: pointer;
+    width: 24px;
+    /* transform: matrix(1, 0, 0, 1, 16, -16); */
+    /* height: 32px;
+    transition-duration: 0.2s; */
+    /* background-color: var(--white-color); */
+    color: rgba(0, 0, 0, 0);
+    opacity: .85;
+    border-radius: 50%;
+    font-size: 0px; 
+}
+
+.landscapes__carousel-btn-prev {
+    left: 0px;
+    top: 144px;
+    right: 248px;
+    bottom: 135px;
+    margin-top: -15px;
+    transform: rotate(180deg);
+    writing-mode: horizontal-tb;
+}
+
+.landscapes__carousel-btn-next {
+    top: 144px;
+    right: 0px;
+    bottom: 135px;
+    left: 248px;
+    margin-top: -15px;
+}
+
+/* .landscapes__carousel-btn-arrow {
+    width: 36px;
+    height: 48px;
+} */
 
 .landscapes__carousel-slide {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.landscapes__carousel-btn-prev {
-    left: 7px;
-}
-.landscapes__carousel-btn-prev,
-.landscapes__carousel-btn-next {
-    position: absolute;
-    /* top: 50%;
-    z-index: 1;
-    cursor: pointer;
-    transform: matrix(1, 0, 0, 1, 16, -16);
-    width: 32px;
-    height: 32px;
-    transition-duration: 0.2s;
-    background-color: var(--white-color);
-    color: rgba(0, 0, 0, 0);
-    opacity: .85;
-    border-radius: 50%;  */
+    width: 100%;
+    gap: 30px;  
+    height: 100%;
+    max-width: 1000px;
+    object-fit: fill;
 }
 
 .landscapes__carousel-indicators {
-    position: absolute;
-    padding: 50px;
-    height: 5px;
-    content: "";
+    padding: 15px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .landscapes__carousel-indicator {
-    content: "";
-    height: 5px;
-    width: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
 }
 
 /* .carousel__image {
