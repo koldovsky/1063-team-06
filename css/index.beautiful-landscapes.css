@@ -96,47 +96,62 @@ position: relative;
 .landscapes__carousel-btn-prev,
 .landscapes__carousel-btn-next {
     position: absolute;
-    align-items: flex-start;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    flex-shrink: 0;
-    z-index: 1;
-    cursor: pointer;
-    width: 24px;
+    /* align-items: flex-start; */
+    /* flex-shrink: 0; */
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    /* z-index: 1; */
+    /* cursor: pointer; */
+    width: 20px;
     /* transform: matrix(1, 0, 0, 1, 16, -16); */
     /* height: 32px;
     transition-duration: 0.2s; */
     /* background-color: var(--white-color); */
-    color: rgba(0, 0, 0, 0);
+    /* color: rgba(0, 0, 0, 0);
     opacity: .85;
     border-radius: 50%;
-    font-size: 0px; 
+    font-size: 0px;  */
 }
 
-.landscapes__carousel-btn-prev {
-    left: 0px;
+.landscapes__carousel-button-prev {
+    /* position: absolute; */
     top: 144px;
     right: 248px;
-    bottom: 135px;
+    bottom: 105px;
     margin-top: -15px;
     transform: rotate(180deg);
-    writing-mode: horizontal-tb;
+    z-index: 1;
+    cursor: pointer;
+    /* writing-mode: horizontal-tb; */
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 24px;
+    height: 24px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    opacity: .85;
 }
 
-.landscapes__carousel-btn-next {
+.landscapes__carousel-button-next {
+    position: absolute;
+    right: 248px;
     top: 144px;
-    right: 0px;
     bottom: 135px;
-    left: 248px;
     margin-top: -15px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 24px;
+    height: 24px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    opacity: .85;
 }
-
-/* .landscapes__carousel-btn-arrow {
-    width: 36px;
-    height: 48px;
-} */
 
 .landscapes__carousel-slide {
     display: flex;
@@ -151,13 +166,22 @@ position: relative;
 
 .landscapes__carousel-indicators {
     padding: 15px 0;
+    margin-top: 10px;
+    bottom: -25px;
+    margin-block-start: 10px;
+    position: static;
+    text-align: center;
     display: flex;
-    gap: 10px;
+    gap: 18px;
     justify-content: center;
     align-items: center;
+    /* width: 272px;
+    line-height: 0px;
+    font-weight: 400px; */
 }
 
 .landscapes__carousel-indicator {
+    align-items: flex-start;
     width: 10px;
     height: 10px;
     border-radius: 50%;
