@@ -4,4 +4,6 @@ document.addEventListener("partialsLoaded", () => {
   import("./tabs.js");
   import("./tour-itinerary.js");
   import("./about-norway.js");
+  import("./faq.js");
+  import("./blog.js");
 });
