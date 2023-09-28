@@ -1,7 +1,7 @@
 .header {
     min-width: 100vw;
     min-height: 100vh;
-    background: url(../img/header/header-background.png) no-repeat;
+    background: url(../img/header/header-background.jpg) no-repeat;
     background-size: cover;
     background-position: right;
 }
@@ -84,14 +84,14 @@
         top: calc(50% - 1px);
     }
 
-    .header__burger-menu.active span {
+    .header__burger-menu.active-menu span {
         transform: scale(0);
     }
-    .header__burger-menu.active::before {
+    .header__burger-menu.active-menu::before {
         transform: rotate(-45deg);
         top: calc(50% - 1px);
     }
-    .header__burger-menu.active::after {
+    .header__burger-menu.active-menu::after {
         transform: rotate(45deg);
         bottom: calc(50% - 1px);
     }
@@ -120,10 +120,10 @@
         font-size: 17px;
         font-weight: 500;
     }
-    .header__menu.active {
+    .header__menu.active-menu {
         left: 0;
     }
-    .header__menu.active::before {
+    .header__menu.active-menu::before {
         left: 0;
     }
     .scroll-lock {

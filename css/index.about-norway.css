@@ -14,9 +14,11 @@
 .about-norway__title-prefix {
     font-weight: bold;
 }
-
+.about-norway__title{
+    font-size: 12px;
+}
 .about-norway__subtitle {
-    font-size: 34px;
+    font-size: 39px;
     color: var(--main-text-dark-color);
 }
 .about-norway__fact {

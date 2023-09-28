@@ -1,12 +1,73 @@
-.footer{
+.footer__top {
      background-image: url(../img/footer/footer-background.jpg);
      /* background-size: cover;
      background-position: center; */
      background-position: 1435px 67%;
-     background-size: 162rem; 
+     background-size: 162rem;
+}
+
+.footer__middle {
+     background-color: var(--black-color);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+.footer__bottom {
+     background-color: var(--black-color);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
 }
 
 .footer__norway-logo {
-     max-width: 176;
+     width: 176px;
      height: auto;
+     margin-top: 60px;
+     margin-bottom: 32px;
+     padding: 0px;
+     display: block;
+}
+
+.footer__nav {
+     margin: 3px;
+     font-weight: bold;
+}
+
+.footer__links {
+     margin: 14px;
+     display: flex;
+     flex-direction: column;
+}
+
+.footer__link-item {
+     display: flex;
+     justify-content: center;
+     padding: 7px;
+}
+
+.footer__par {
+     margin-top: 5px;
+     color: var(--white-color);
+     font-size: 12px;
+     font-weight: bold;
+}
+
+.footer__svgs-bottom {
+     fill: var(--main-text-dark-color);
+     display: flex;
+     margin-bottom: 27px;
+     margin-top: 15px;
+     margin-left: -7.5px;
+     margin-right: -7.5px;
+}
+
+.footer__facebook-svg {
+     margin-right: 15px;
+}
+
+.footer_youtube-svg {
+     margin-left: 15px;
 }
