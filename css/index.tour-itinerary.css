@@ -3,8 +3,20 @@
     color: var(--subt-dark-background-color);
     padding: 3%;
 }
+.tour-itinerary__info{
+    padding-right: 20px;
+}
 .tour-itinerary__description span{
     color: var(--white-color);
+}
+.tour-itinerary__title{
+    font-size: 12px;
+}
+.tour-itinerary__description-title{
+    font-size: 39px;
+}
+.tour-itinerary__description-paragraf{
+    font-size: 17px;
 }
 .tour-itinerary__item img{
     width: 50px;
@@ -20,6 +32,10 @@
 }
 .tour-itinerary__item span{
     color: var(--white-color);
+    font-size: 18px;
+}
+.tour-itinerary__item p{
+    font-size: 14px;
 }
 
 @media (min-width: 768px){

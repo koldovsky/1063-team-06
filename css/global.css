@@ -100,7 +100,7 @@ h1 {
 
 .header-subtitle {
     font-family: 'Playfair Display', serif;
-    font-size: 32px;
+    font-size: 34px;
     line-height: 1.2;
     font-weight: 700;
     font-style: normal;
@@ -164,4 +164,12 @@ h2 {
     --input-text-gray-color: #ffffff8A;
     --white-translucent-color: #ffffff66;
     --black-translucent-color: #000000a6;
+    --transparent-grey-color: #ffffffbf;
+    --faq-title-prefix-red-color: #EE2E14;
+    --faq-plain-text-lightgrey-color: #A7A7A9;
+    --faq-answer-grey-color: #a9a9a9;
+    --faq-accordion-background-grey-color: rgba(255, 255, 255, 0.2);
+    --faq-shadow-grey-color: #505155;
+    --faq-background-white-color: #fff;
+    --faq-background-dark-color: #232428;    
 }
