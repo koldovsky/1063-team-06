@@ -1,9 +1,34 @@
 section.contact-us {
   background-color: #232428;
-  width: 50%;
   color: #ffffff99;
   text-align: center;
-  margin: 10px 0;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 800px;
+}
+
+.contact-us-background {
+  background-image: url(/img/contact_us/background.png);
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.contact-us-main {
+  position: absolute;
+  top: 200px;
+  background-color: #232428;
+  width: 50%;
+  min-width: 350px;
+  color: #ffffff99;
+  padding: 40px;
 }
 
 span.contact-us__title-prefix {
@@ -46,4 +71,25 @@ button.contact-us__form-button {
 button.contact-us__form-button:hover {
   background-color: #ffffff;
   color: #232428;
+}
+
+.contact-us__form-date--label {
+  position: relative;
+  width: 100%;
+}
+
+.contact-us__form-date--label:before {
+  content: "";
+  position: absolute;
+  right: 9%;
+  top: 5px;
+  bottom: 0;
+  width: 20px;
+  mask: url(/img/contact_us/calendar-icon.svg) no-repeat 50% 50%;
+  -webkit-mask: url(/img/contact_us/calendar-icon.svg) no-repeat 50% 50%;
+  background-color: #20202099;
+}
+
+.contact-us__form-date--label:before path {
+  fill: #de000099;
 }

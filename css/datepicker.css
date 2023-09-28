@@ -1,0 +1,39 @@
+.datepicker span {
+    font-size: 12.5px;
+    color: rgb(112, 112, 112);
+    font-weight: 400;
+}
+
+.datepicker-cell.next:not(.disabled),
+.datepicker-cell.prev:not(.disabled) {
+    color: #c2c2c2 !important;
+}
+
+.datepicker .dow {
+    font-family: Times;
+    font-size: 10.5px !important;
+    font-weight: 300 !important;
+    height: 14px !important;
+}
+
+.datepicker-header .datepicker-controls {
+    border-bottom: 1px solid #eeeeef;
+    padding: 5px 0 !important;
+}
+
+.datepicker-header .datepicker-controls .button {
+    font-size: 14px;
+    font-weight: 400 !important;
+    color: rgb(112, 112, 112);
+}
+
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+    background-color: rgb(20, 169, 238) !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+}
+
+.datepicker-cell:hover {
+    background-color: rgba(20, 169, 238, .28) !important;
+}
