@@ -71,19 +71,23 @@
         grid-template-columns: 1fr 1fr;
     }
     .landscapes__carousel-btn-prev {
-        height: 32px;
-        width: 32px;
-        left: 5%;
+        height: 32px!important;
+        width: 32px!important;
+        left: 5%!important;
     }
     .landscapes__carousel-btn-next {
-        height: 32px;
-        width: 32px;
-        right: 8%;
+        height: 32px!important;
+        width: 32px!important;
+        right: 8%!important;
     }
     .beautiful-landscapes__heading {
         display: flex;
         flex-direction: column;
         max-width: 64%;
+    }
+    .quote__wrapper-inner {
+        display: flex;
+        justify-content: center;
     }
     .quote__wrapper-text {
         display: flex;
