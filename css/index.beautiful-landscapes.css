@@ -1,9 +1,9 @@
 .beautiful-landscapes {
     margin-top: 50px;
     padding-top: 90px;
-    padding-right: 15px;
+    padding-right: 10px;
     padding-bottom: 60px;
-    padding-left: 15px;
+    padding-left: 10px;
     background-color: var(--background-dark-shade);
 }
 
@@ -39,8 +39,8 @@
 
 .beautiful-landscapes__text-content {
     margin-top: 75px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 17px;
+    padding-right: 17px;
     margin-left: -10px;
     margin-right: -10px;
     font-weight: 400;
@@ -70,6 +70,27 @@
         /* flex-direction: column; */
         grid-template-columns: 1fr 1fr;
     }
+    .landscapes__carousel-btn-prev {
+        height: 32px;
+        width: 32px;
+        left: 5%;
+    }
+    .landscapes__carousel-btn-next {
+        height: 32px;
+        width: 32px;
+        right: 8%;
+    }
+    .beautiful-landscapes__heading {
+        display: flex;
+        flex-direction: column;
+        max-width: 64%;
+    }
+    .quote__wrapper-text {
+        display: flex;
+        flex-direction: column;
+        width: 425px;
+        justify-content: flex-start;
+    }
 }
 
 @media (min-width: 991px) {
@@ -88,21 +109,23 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 5px;
-padding-left: 15px;
-padding-right: 15px;
+/* padding-left: 15px;
+padding-right: 15px; */
 position: relative;
+margin-top: 45px;
+padding-bottom: 80px;
 }
 
-.landscapes__carousel-btn-prev,
-.landscapes__carousel-btn-next {
-    position: absolute;
+/* .landscapes__carousel-btn-prev,
+.landscapes__carousel-btn-next { */
+    /* position: absolute; */
     /* align-items: flex-start; */
     /* flex-shrink: 0; */
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* border: 1px solid white; */
     /* z-index: 1; */
     /* cursor: pointer; */
-    width: 20px;
+    /* width: 20px; */
     /* transform: matrix(1, 0, 0, 1, 16, -16); */
     /* height: 32px;
     transition-duration: 0.2s; */
@@ -111,36 +134,101 @@ position: relative;
     opacity: .85;
     border-radius: 50%;
     font-size: 0px;  */
+/* } */
+
+.landscapes__carousel-btn-prev {
+position: absolute;
+text-align: center;
+align-items: flex-start;
+background-attachment: scroll;
+background-color: var(--white-color);
+background-origin: padding-box;
+border-radius: 50%;
+border: 1px solid white;
+cursor: pointer;
+font-weight: 400;
+width: 24px;
+height: 24px;
+/* margin-top: -15px; */
+opacity: .85;
+padding: 0;
+top: 35%;
+left: 7%;
+transform: matrix(1, 0, 0, 1, 12, -12);
+transition-duration: 0.2s;
+transition-property: opacity;
+transition-timing-function: ease-out;
+writing-mode: horizontal-tb;
+z-index: 1;
+}
+
+.landscapes__carousel-btn-next {
+    position: absolute;
+    text-align: center;
+    right: 17%;
+    align-items: flex-start;
+    background-attachment: scroll;
+    background-color: var(--white-color);
+    background-origin: padding-box;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: 400;
+    width: 24px;
+    height: 24px;
+    opacity: .85;
+    padding: 0;
+    top: 35%;
+    transform: matrix(1, 0, 0, 1, 12, -12);
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    transition-timing-function: ease-out;
+    writing-mode: horizontal-tb;
+    z-index: 1;
 }
 
 .landscapes__carousel-button-prev {
+    color: var(--black-color);
+    cursor: pointer;
+    fill: rgb(35, 36, 40);
+    height: 12px;
+    text-align: center;
+    transform: matrix3d(-1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1);
+    width: 12px;
+    writing-mode: horizontal-tb;
     /* position: absolute; */
-    top: 144px;
+    /* top: 144px;
     right: 248px;
     bottom: 105px;
-    margin-top: -15px;
-    transform: rotate(180deg);
+    margin-top: -15px; */
+    /* transform: rotate(180deg);
     z-index: 1;
-    cursor: pointer;
+    cursor: pointer; */
     /* writing-mode: horizontal-tb; */
-    border-radius: 50%;
-    border: 1px solid white;
-    width: 24px;
+    /* border-radius: 50%;
+    border: 1px solid white; */
+    /* width: 24px;
     height: 24px;
-    background-color: var(--white-color);
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    opacity: .85;
+    opacity: .85; */
 }
 
 .landscapes__carousel-button-next {
-    position: absolute;
-    right: 248px;
+    color: var(--black-color);
+    cursor: pointer;
+    fill: rgb(35, 36, 40);
+    height: 12px;
+    text-align: center;
+    width: 12px;
+    writing-mode: horizontal-tb;
+    /* position: absolute; */
+    /* right: 248px;
     top: 144px;
     bottom: 135px;
-    margin-top: -15px;
-    z-index: 1;
+    margin-top: -15px; */
+    /* z-index: 1;
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid white;
@@ -150,7 +238,7 @@ position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    opacity: .85;
+    opacity: .85; */
 }
 
 .landscapes__carousel-slide {
@@ -162,6 +250,8 @@ position: relative;
     height: 100%;
     max-width: 1000px;
     object-fit: fill;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .landscapes__carousel-indicators {
@@ -187,6 +277,7 @@ position: relative;
     border-radius: 50%;
     background-color: #ccc;
     cursor: pointer;
+    opacity: .85;
 }
 
 /* .carousel__image {
@@ -196,7 +287,7 @@ position: relative;
 
 /* quote */
 .quote__wrapper {
-    padding-top: 45px;
+    padding-top: 50px;
     padding-bottom: 45px;
     padding-left: 20px;
     padding-right: 20px;
@@ -243,7 +334,7 @@ position: relative;
 .quote__wrapper-inner {
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .quote__text {
