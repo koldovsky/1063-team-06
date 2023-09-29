@@ -5,6 +5,16 @@
     padding: 3%;
 }
 
+.about-norway__letter{
+    background-image: url('../img/about_norway/forest-grey.jpg');
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align:center;
+    font-weight:bold;
+    font-size: 400px;
+}
+
 .about-norway__letter-with-image {
     justify-content: center;
     align-items: center;
