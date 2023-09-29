@@ -21,6 +21,9 @@
     font-size: 39px;
     color: var(--main-text-dark-color);
 }
+.about-norway__description{
+    font-size: 19px;
+}
 .about-norway__fact {
     padding-top: 60px;
 }
