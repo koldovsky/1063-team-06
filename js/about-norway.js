@@ -39,7 +39,7 @@ function changeBackgroun(){
 }
 
 
-setInterval(changeBackgroun, 3000);
+//setInterval(changeBackgroun, 3000);
 
 renderAboutNorweyFact(aboutNorwayFact);
 
