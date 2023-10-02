@@ -5,7 +5,7 @@ section.contact-us {
   overflow-x: hidden;
   position: relative;
   min-height: 950px;
-  padding: 110px 32px;
+  padding: 110px 10%;
 }
 
 .contact-us-background {
@@ -111,7 +111,22 @@ button.contact-us__form-button:hover {
 }
 
 @media (max-width: 768px) {
+  section.contact-us {
+    padding: 110px 4%;
+  }
   .contact-us-main {
     width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-us-main {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .contact-us-main {
+    width: 40%;
   }
 }
