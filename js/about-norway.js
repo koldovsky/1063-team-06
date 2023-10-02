@@ -23,11 +23,11 @@ const aboutNorwayFact = [
 
 
 const backgroundImages =[
-    '../img/about_norway/forest-grey.jpg',
-    '../img/about_norway/foggy-forest-grey.jpg',
-    '../img/about_norway/norway_forest.jpg',
-    '../img/about_norway/norway_mounts.jpg',
-    '../img/about_norway/tromso.jpg',
+    'https://raw.githubusercontent.com/koldovsky/1063-team-06/9aa4b92d3410e353d0704ec6a50b15b02325a539/img/about_norway/forest-grey.jpg',
+    'https://raw.githubusercontent.com/koldovsky/1063-team-06/9aa4b92d3410e353d0704ec6a50b15b02325a539/img/about_norway/foggy-forest-grey.jpg',
+    'https://raw.githubusercontent.com/koldovsky/1063-team-06/main/img/about_norway/norway_forest.jpg',
+    'https://raw.githubusercontent.com/koldovsky/1063-team-06/main/img/about_norway/norway_mounts.jpg',
+    'https://raw.githubusercontent.com/koldovsky/1063-team-06/main/img/about_norway/tromso.jpg',
 ]
 
 let currentImageIndex = 0;
@@ -39,7 +39,7 @@ function changeBackgroun(){
 }
 
 
-//setInterval(changeBackgroun, 3000);
+setInterval(changeBackgroun, 3000);
 
 renderAboutNorweyFact(aboutNorwayFact);
 
