@@ -1,11 +1,9 @@
 .tour-itinerary{
     background-image: url(../img/tour_itinerary/background.png);
     color: var(--subt-dark-background-color);
-    margin-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 90px;
-    padding-top: 90px;
 }
 .tour-itinerary__info{
     padding-right: 20px;
