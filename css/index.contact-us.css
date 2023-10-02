@@ -4,7 +4,8 @@ section.contact-us {
   text-align: center;
   overflow-x: hidden;
   position: relative;
-  min-height: 800px;
+  min-height: 950px;
+  padding: 110px 32px;
 }
 
 .contact-us-background {
@@ -23,12 +24,12 @@ section.contact-us {
 
 .contact-us-main {
   position: absolute;
-  top: 200px;
   background-color: #232428;
   width: 50%;
   min-width: 350px;
+  max-width: 1200px;
   color: #ffffff99;
-  padding: 40px;
+  padding: 46px 52px;
 }
 
 span.contact-us__title-prefix {
@@ -45,19 +46,36 @@ h2.contact-us__description-header {
   font-size: 39px;
   line-height: 1.2;
   font-family: 'Playfair Display', serif;
+  margin: 20px 0;
 }
 
 p.contact-us__description-details {
   font-size: 17px;
   text-align: justify;
   text-align-last: center;
-  margin: 10px 30px;
+  margin: 25px 0;
 }
 
 form.contact-us__form input {
   display: block;
   margin: 10px auto;
-  width: 85%;
+  width: 100%;
+  background-color: rgb(45, 46, 52);
+  color: white;
+  padding: 10px 20px; 
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+form.contact-us__form input::placeholder {
+  color: rgb(155 156 158);
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact-us__form-date--input.datepicker-input {
+  margin-top: 0px;
 }
 
 button.contact-us__form-button {
@@ -66,6 +84,7 @@ button.contact-us__form-button {
   font-size: 14px;
   margin: 10px auto;
   padding: 10px 10px;
+  width: 100%;
 }
 
 button.contact-us__form-button:hover {
@@ -81,15 +100,18 @@ button.contact-us__form-button:hover {
 .contact-us__form-date--label:before {
   content: "";
   position: absolute;
-  right: 9%;
+  right: 4%;
   top: 5px;
   bottom: 0;
-  width: 20px;
+  width: 16px;
+  height: 40px;
   mask: url(/img/contact_us/calendar-icon.svg) no-repeat 50% 50%;
   -webkit-mask: url(/img/contact_us/calendar-icon.svg) no-repeat 50% 50%;
-  background-color: #20202099;
+  background-color: rgb(155 156 158);
 }
 
-.contact-us__form-date--label:before path {
-  fill: #de000099;
+@media (max-width: 768px) {
+  .contact-us-main {
+    width: 90%;
+  }
 }
