@@ -1,9 +1,9 @@
 .beautiful-landscapes {
     margin-top: 50px;
     padding-top: 90px;
-    padding-right: 15px;
+    padding-right: 10px;
     padding-bottom: 60px;
-    padding-left: 15px;
+    padding-left: 10px;
     background-color: var(--background-dark-shade);
 }
 
@@ -26,26 +26,23 @@
     margin-top: 20px;
     text-align: left;
     vertical-align: baseline;
+    letter-spacing: 1.02px;
 }
 
 .beautiful-landscapes__text-light-color {
     color: var(--white-color);
-    font-size: 34px;
-}
-
-.beautiful-landscapes__text-accent-color {
-    font-size: 34px;
 }
 
 .beautiful-landscapes__text-content {
-    margin-top: 75px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-top: 55px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: -10px;
     margin-right: -10px;
     font-weight: 400;
-    letter-spacing: 0.51px;
     line-height: 28.9px;
+    font-size: 17px;
+    letter-spacing: 0.51px;
 }
 
 /* Pictures */
@@ -64,20 +61,6 @@
     margin-bottom: 30px;
 }
 
-@media (min-width: 767px) {
-    .carousel__slides {
-        display: grid;
-        /* flex-direction: column; */
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 991px) {
-    .carousel__slides {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
 .landscapes__carousel {
 /* min-height: 350px; */
 /* display: grid;
@@ -88,59 +71,106 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 5px;
-padding-left: 15px;
-padding-right: 15px;
+/* padding-left: 15px;
+padding-right: 15px; */
 position: relative;
+margin-top: 45px;
+padding-bottom: 80px;
 }
 
-.landscapes__carousel-btn-prev,
+.landscapes__carousel-btn-prev {
+position: absolute;
+text-align: center;
+align-items: flex-start;
+background-attachment: scroll;
+background-color: var(--white-color);
+background-origin: padding-box;
+border-radius: 50%;
+border: 1px solid white;
+cursor: pointer;
+font-weight: 400;
+width: 24px;
+height: 24px;
+/* margin-top: -15px; */
+opacity: .85;
+padding: 0;
+top: 35%;
+left: 7%;
+transform: matrix(1, 0, 0, 1, 12, -12);
+transition-duration: 0.2s;
+transition-property: opacity;
+transition-timing-function: ease-out;
+writing-mode: horizontal-tb;
+z-index: 1;
+}
+
 .landscapes__carousel-btn-next {
     position: absolute;
-    /* align-items: flex-start; */
-    /* flex-shrink: 0; */
+    text-align: center;
+    right: 17%;
+    align-items: flex-start;
+    background-attachment: scroll;
+    background-color: var(--white-color);
+    background-origin: padding-box;
     border-radius: 50%;
-    /* border: 1px solid white; */
-    /* z-index: 1; */
-    /* cursor: pointer; */
-    width: 20px;
-    /* transform: matrix(1, 0, 0, 1, 16, -16); */
-    /* height: 32px;
-    transition-duration: 0.2s; */
-    /* background-color: var(--white-color); */
-    /* color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: 400;
+    width: 24px;
+    height: 24px;
     opacity: .85;
-    border-radius: 50%;
-    font-size: 0px;  */
+    padding: 0;
+    top: 35%;
+    transform: matrix(1, 0, 0, 1, 12, -12);
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    transition-timing-function: ease-out;
+    writing-mode: horizontal-tb;
+    z-index: 1;
 }
 
 .landscapes__carousel-button-prev {
+    color: var(--black-color);
+    cursor: pointer;
+    fill: rgb(35, 36, 40);
+    height: 12px;
+    text-align: center;
+    transform: matrix3d(-1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1);
+    width: 12px;
+    writing-mode: horizontal-tb;
     /* position: absolute; */
-    top: 144px;
+    /* top: 144px;
     right: 248px;
     bottom: 105px;
-    margin-top: -15px;
-    transform: rotate(180deg);
+    margin-top: -15px; */
+    /* transform: rotate(180deg);
     z-index: 1;
-    cursor: pointer;
+    cursor: pointer; */
     /* writing-mode: horizontal-tb; */
-    border-radius: 50%;
-    border: 1px solid white;
-    width: 24px;
+    /* border-radius: 50%;
+    border: 1px solid white; */
+    /* width: 24px;
     height: 24px;
-    background-color: var(--white-color);
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    opacity: .85;
+    opacity: .85; */
 }
 
 .landscapes__carousel-button-next {
-    position: absolute;
-    right: 248px;
+    color: var(--black-color);
+    cursor: pointer;
+    fill: rgb(35, 36, 40);
+    height: 12px;
+    text-align: center;
+    width: 12px;
+    writing-mode: horizontal-tb;
+    /* position: absolute; */
+    /* right: 248px;
     top: 144px;
     bottom: 135px;
-    margin-top: -15px;
-    z-index: 1;
+    margin-top: -15px; */
+    /* z-index: 1;
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid white;
@@ -150,7 +180,7 @@ position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    opacity: .85;
+    opacity: .85; */
 }
 
 .landscapes__carousel-slide {
@@ -162,6 +192,8 @@ position: relative;
     height: 100%;
     max-width: 1000px;
     object-fit: fill;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .landscapes__carousel-indicators {
@@ -169,12 +201,22 @@ position: relative;
     margin-top: 10px;
     bottom: -25px;
     margin-block-start: 10px;
+    font-size: 0;
+    border-image-width: 1;
     position: static;
     text-align: center;
     display: flex;
     gap: 18px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    background-color: var(--background-dark-shade);
+    transition: opacity .6s ease;
+    width: 272px;
+    color: var(--white-color);
+    border-image-repeat: stretch;
+    -webkit-tap-highlight-color: var(--black-color);
+    -webkit-font-smoothing: antialiased;
     /* width: 272px;
     line-height: 0px;
     font-weight: 400px; */
@@ -185,8 +227,10 @@ position: relative;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #ccc;
+    background-color: var(--faq-accordion-background-grey-color);
+    color: var(--white-color);
     cursor: pointer;
+    opacity: .85;
 }
 
 /* .carousel__image {
@@ -196,7 +240,7 @@ position: relative;
 
 /* quote */
 .quote__wrapper {
-    padding-top: 45px;
+    padding-top: 50px;
     padding-bottom: 45px;
     padding-left: 20px;
     padding-right: 20px;
@@ -214,12 +258,14 @@ position: relative;
 
 .quote__symbol-line::before {
     content: "";
+    font-size: 17px;
     position: absolute;
     display: block;
     width: 38%;
     height: 100%;
     opacity: .2;
     background-color: var(--white-color);
+    line-height: 28.9px;
 }
 
 .quote__symbol {
@@ -231,6 +277,7 @@ position: relative;
 
 .quote__symbol-line::after {
     content: "";
+    font-size: 17px;
     position: absolute;
     display: block;
     right: 0px;
@@ -238,12 +285,13 @@ position: relative;
     height: 100%;
     opacity: .2;
     background-color: var(--white-color);
+    line-height: 28.9px;
 }
 
 .quote__wrapper-inner {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 50px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-top: 25px;
 }
 
 .quote__text {
@@ -277,11 +325,144 @@ position: relative;
 
 .quote__wrapper-icon::after {
     content: "";
+    font-size: 17px;
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
     opacity: .2;
+    line-height: 28.9px;
     background-color: var(--white-color);
 }
 
+@media (min-width: 768px) {
+    .carousel__slides {
+        display: grid;
+        /* flex-direction: column; */
+        grid-template-columns: 1fr 1fr;
+    }
+    .landscapes__carousel-btn-prev {
+        height: 32px!important;
+        width: 32px!important;
+        left: 5%!important;
+    }
+    .landscapes__carousel-btn-next {
+        height: 32px!important;
+        width: 32px!important;
+        right: 8%!important;
+    }
+    .landscapes__carousel-indicators{
+        margin-block-start: 20px;
+        width: 704px;
+    }
+    .beautiful-landscapes__heading {
+        display: flex;
+        flex-direction: column;
+        max-width: 64%;
+    }
+    .beautiful-landscapes__text-content {
+        padding-right: 0;
+    }
+    .quote__wrapper {
+        margin-top: 0;
+    }
+    .quote__sign {
+        height: 70px;
+        width: 70px;
+        font-size: 17px;
+    }
+    .quote__wrapper-inner {
+        display: flex;
+        justify-content: center;
+    }
+    .quote__wrapper-text {
+        display: flex;
+        flex-direction: column;
+        width: 425px;
+        justify-content: flex-start;
+    }
+    .quote__text {
+        font-size: 19px;
+        line-height: 35.72px;
+    }
+    .quote__autor {
+        margin-top: 10px;
+        font-size: 17px;
+    }
+    .quote__symbol-line::before {
+        top: 10px;
+        line-height: 28.9px;
+        text-align: center;
+        width: 177.8px;
+        left: 18%;
+    }
+    .quote__symbol-line::after {
+        top: 10px;
+        line-height: 28.9px;
+        text-align: center;
+        width: 177.8px;
+        right: 18%;
+    }
+    .quote__wrapper-icon::after {
+        width: 459.33px;
+        left: 19%;
+    }
+}
+
+@media (min-width: 991px) {
+    .beautiful-landscapes__title {
+        font-size: 13px;
+        letter-spacing: 0.39px;
+        line-height: 20.8px;
+    }
+    .header-subtitle {
+        font-size: 45px;
+        letter-spacing: 1.35px;
+        line-height: 54px;
+    }
+    .carousel__slides {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .landscapes__carousel-indicators {
+        width: 927.2px;
+    }
+    .beautiful-landscapes__text-content {
+        padding-left: 0;
+    }
+    .quote__text {
+        font-size: 21px;
+    }
+    .quote__symbol-line::before {
+        top: 10px;
+        text-align: center;
+        width: 252.2px;
+    }
+    .quote__symbol-line::after {
+        top: 10px;
+        text-align: center;
+        width: 252.2px;
+    }
+    .quote__wrapper-icon::after {
+        width: 608.13px;
+    }
+    .quote__text {
+        line-height: 39.48px;
+    }
+    .carousel__slides {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1282px) {
+    .landscapes__carousel-indicators {
+        width: 1170px;
+    }
+    .quote__symbol-line::before {
+        width: 333.14px;
+    }
+    .quote__symbol-line::after {
+        width: 333.14px;
+    }
+    .quote__wrapper-icon::after {
+        width: 770px;
+    }
+}

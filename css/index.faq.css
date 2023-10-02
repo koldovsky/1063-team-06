@@ -48,6 +48,7 @@
 
 .question {
     margin-bottom: 0.5em;
+    cursor: pointer;
 }
 
 .answer {
@@ -55,6 +56,13 @@
     font-size: 15px;
     margin-top: 20px;
     line-height: 1.6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    cursor: pointer;
+}
+.plus-minus {
+    cursor: pointer;
 }
 .accordion {
     padding: 20px 0;

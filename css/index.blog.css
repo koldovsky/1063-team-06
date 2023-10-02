@@ -1,0 +1,27 @@
+.blog__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* .plain-text__blog {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-top: 25px;
+    max-width: 100%;
+    padding: 25px 0 15px;
+} */
+
+.left-block__blog,
+.middle-block__blog,
+.right-block__blog {
+    width: calc(33.33% - 20px); /* Adjust the width as needed */
+    margin-right: 20px; /* Adjust the margin between blocks */
+}
+
+.right-block__blog {
+    margin-right: 0; /* Remove margin for the last block */
+}
