@@ -105,6 +105,23 @@ z-index: 1;
 }
 
 .landscapes__carousel-btn-next {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    transition: opacity .15s ease;
+    cursor: pointer;
+    opacity: .75;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: white; */
     position: absolute;
     text-align: center;
     right: 17%;
@@ -190,13 +207,17 @@ z-index: 1;
     width: 100%;
     gap: 30px;  
     height: 100%;
-    max-width: 1000px;
-    object-fit: fill;
     padding-left: 24px;
     padding-right: 24px;
 }
 
+.landscapes__carousel-indicators-btn {
+    display: flex;
+    justify-content: center;
+}
+
 .landscapes__carousel-indicators {
+    display: flex;
     padding: 15px 0;
     margin-top: 10px;
     bottom: -25px;
@@ -205,7 +226,6 @@ z-index: 1;
     border-image-width: 1;
     position: static;
     text-align: center;
-    display: flex;
     gap: 18px;
     justify-content: center;
     align-items: center;
@@ -233,6 +253,9 @@ z-index: 1;
     opacity: .85;
 }
 
+.landscapes__carousel-indicator--active {
+    background-color: var(--white-color);
+}
 /* .carousel__image {
     height: 244px;
     width: 272px;
@@ -378,8 +401,8 @@ z-index: 1;
     .quote__wrapper-text {
         display: flex;
         flex-direction: column;
-        width: 425px;
-        justify-content: flex-start;
+        max-width: 425px;
+        justify-content: center;
     }
     .quote__text {
         font-size: 19px;
@@ -448,10 +471,8 @@ z-index: 1;
     .quote__text {
         line-height: 39.48px;
     }
-    .carousel__slides {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 }
+
 @media (min-width: 1282px) {
     .landscapes__carousel-indicators {
         width: 1170px;
@@ -464,5 +485,8 @@ z-index: 1;
     }
     .quote__wrapper-icon::after {
         width: 770px;
+    }
+    .quote__wrapper-text {
+        max-width: 80%;
     }
 }
