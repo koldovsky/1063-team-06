@@ -165,6 +165,7 @@ h2 {
     --white-translucent-color: #ffffff66;
     --black-translucent-color: #000000a6;
     --transparent-grey-color: #ffffffbf;
+    --landscapes-indicators-color: rgba(255,255,255,0.6);
     --faq-title-prefix-red-color: #EE2E14;
     --faq-plain-text-lightgrey-color: #A7A7A9;
     --faq-answer-grey-color: #a9a9a9;
