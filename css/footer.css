@@ -1,9 +1,8 @@
 .footer__top {
      background-image: url(../img/footer/footer-background.jpg);
-     /* background-size: cover;
-     background-position: center; */
-     background-position: 1435px 67%;
-     background-size: 162rem;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 100%;
 }
 
 .footer__middle {
@@ -70,4 +69,86 @@
 
 .footer_youtube-svg {
      margin-left: 15px;
+}
+
+.footer__email-svg {
+     color: var(--white-color);
+     background-color: rgba(0, 0, 0, 0.65);
+     text-align: center;
+     display: inline-block;
+     width: 272px;
+     height: 228.39px;
+     padding-block: 35px;
+}
+
+.email {
+     margin-block: 8px;
+}
+
+.email__write-us {
+     margin: 15px;
+     font-weight: bold;
+     font-size: 23px;
+     padding: 2px;
+}
+
+.email__address {
+     font-size: 15px;
+}
+
+.link__email {
+     text-decoration: underline;
+}
+
+.footer__visit-us-svg {
+     color: var(--white-color);
+     background-color: rgba(0, 0, 0, 0.65);
+     text-align: center;
+     display: inline-block;
+     width: 272px;
+     height: 228.39px;
+     padding-block: 35px;
+}
+
+.location {
+     margin-block: 5px;
+}
+
+.location__visit-us{
+     margin: 15px;
+     font-weight: bold;
+     font-size: 23px;
+     padding: 2px;
+}
+
+.location__parag {
+     font-size: 15px;
+     font-weight: 400;
+     color: #A9A9A9;
+}
+
+.footer__phone-svg {
+     color: var(--white-color);
+     background-color: rgba(0, 0, 0, 0.65);
+     text-align: center;
+     display: inline-block;
+     width: 272px;
+     height: 228.39px;
+     padding-block: 35px;
+}
+
+phone{
+     margin-block: 5px;
+}
+
+.phone__call-us {
+     margin: 15px;
+     font-weight: bold;
+     font-size: 23px;
+     padding: 2px;
+}
+
+.ui-link {
+     font-size: 15px;
+     font-weight: 400;
 }
