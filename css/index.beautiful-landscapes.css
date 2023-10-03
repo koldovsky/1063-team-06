@@ -1,5 +1,10 @@
+.container {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 .beautiful-landscapes {
-    margin-top: 50px;
+    margin-top: 0;
     padding-top: 90px;
     padding-right: 10px;
     padding-bottom: 60px;
@@ -35,10 +40,10 @@
 
 .beautiful-landscapes__text-content {
     margin-top: 55px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: -10px;
-    margin-right: -10px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    margin-left: -20px;
+    /* margin-right: -5px; */
     font-weight: 400;
     line-height: 28.9px;
     font-size: 17px;
@@ -55,11 +60,11 @@
     padding-left: 15px; */
 }
 
-.carousel__slides-container {
+/* .carousel__slides-container {
     padding-right: 15px;
     padding-left: 15px;
     margin-bottom: 30px;
-}
+} */
 
 .landscapes__carousel {
 /* min-height: 350px; */
@@ -67,7 +72,7 @@
 grid-template-columns: 40px 1fr 40px;
 align-items: center;
 gap: 5px; */
-display: flex;
+/* display: flex; */
 align-items: center;
 justify-content: center;
 gap: 5px;
@@ -75,7 +80,7 @@ gap: 5px;
 padding-right: 15px; */
 position: relative;
 margin-top: 45px;
-padding-bottom: 80px;
+padding-bottom: 70px;
 }
 
 .landscapes__carousel-btn-prev {
@@ -105,6 +110,23 @@ z-index: 1;
 }
 
 .landscapes__carousel-btn-next {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    transition: opacity .15s ease;
+    cursor: pointer;
+    opacity: .75;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: white; */
     position: absolute;
     text-align: center;
     right: 17%;
@@ -190,13 +212,20 @@ z-index: 1;
     width: 100%;
     gap: 30px;  
     height: 100%;
-    max-width: 1000px;
-    object-fit: fill;
-    padding-left: 24px;
-    padding-right: 24px;
+    margin-left: -10px;
+    min-width: 58.67px;
+    line-height: 28.9px;
+    font-size: 17px;
+    vertical-align: baseline;
+}
+
+.landscapes__carousel-indicators-btn {
+    display: flex;
+    justify-content: center;
 }
 
 .landscapes__carousel-indicators {
+    display: flex;
     padding: 15px 0;
     margin-top: 10px;
     bottom: -25px;
@@ -205,7 +234,6 @@ z-index: 1;
     border-image-width: 1;
     position: static;
     text-align: center;
-    display: flex;
     gap: 18px;
     justify-content: center;
     align-items: center;
@@ -233,6 +261,9 @@ z-index: 1;
     opacity: .85;
 }
 
+.landscapes__carousel-indicator--active {
+    background-color: var(--white-color);
+}
 /* .carousel__image {
     height: 244px;
     width: 272px;
@@ -240,7 +271,7 @@ z-index: 1;
 
 /* quote */
 .quote__wrapper {
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 45px;
     padding-left: 20px;
     padding-right: 20px;
@@ -289,8 +320,8 @@ z-index: 1;
 }
 
 .quote__wrapper-inner {
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 25px;
 }
 
@@ -336,6 +367,24 @@ z-index: 1;
 }
 
 @media (min-width: 768px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .beautiful-landscapes {
+        padding-top: 105px;
+    }
+    .landscapes__carousel-slide {
+        gap: 0;
+    }
+    .landscapes__carousel-items {
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+    .landscapes__carousel-img {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .carousel__slides {
         display: grid;
         /* flex-direction: column; */
@@ -362,6 +411,10 @@ z-index: 1;
     }
     .beautiful-landscapes__text-content {
         padding-right: 0;
+        margin-top: 35px;
+        margin-bottom: 0;
+        letter-spacing: 0;
+        margin-left: -15px;
     }
     .quote__wrapper {
         margin-top: 0;
@@ -378,8 +431,8 @@ z-index: 1;
     .quote__wrapper-text {
         display: flex;
         flex-direction: column;
-        width: 425px;
-        justify-content: flex-start;
+        max-width: 425px;
+        justify-content: center;
     }
     .quote__text {
         font-size: 19px;
@@ -407,9 +460,19 @@ z-index: 1;
         width: 459.33px;
         left: 19%;
     }
+    .quote__symbol {
+        margin-bottom: -8px;
+    }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 997px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .beautiful-landscapes {
+        padding-top: 120px;
+    }
     .beautiful-landscapes__title {
         font-size: 13px;
         letter-spacing: 0.39px;
@@ -419,6 +482,7 @@ z-index: 1;
         font-size: 45px;
         letter-spacing: 1.35px;
         line-height: 54px;
+        margin-top: 10px;
     }
     .carousel__slides {
         grid-template-columns: 1fr 1fr 1fr;
@@ -448,10 +512,8 @@ z-index: 1;
     .quote__text {
         line-height: 39.48px;
     }
-    .carousel__slides {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 }
+
 @media (min-width: 1282px) {
     .landscapes__carousel-indicators {
         width: 1170px;
@@ -464,5 +526,8 @@ z-index: 1;
     }
     .quote__wrapper-icon::after {
         width: 770px;
+    }
+    .quote__wrapper-text {
+        max-width: 80%;
     }
 }
