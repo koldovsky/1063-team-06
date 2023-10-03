@@ -1,5 +1,6 @@
 @import url(global.css);
 @import url(header.css);
+@import url(vendor/datepicker.min.css);
 @import url(datepicker.css);
 @import url(index.about-us.css);
 @import url(index.tour-itinerary.css);

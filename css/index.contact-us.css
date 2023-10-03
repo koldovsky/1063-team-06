@@ -9,7 +9,7 @@ section.contact-us {
 }
 
 .contact-us-background {
-  background-image: url(/img/contact_us/background.png);
+  background-image: url(https://raw.githubusercontent.com/koldovsky/1063-team-06/main/img/contact_us/background.png);
   min-height: 500px; 
   background-attachment: fixed;
   background-position: center;
@@ -74,7 +74,7 @@ form.contact-us__form input::placeholder {
   font-weight: 400;
 }
 
-.contact-us__form-date--input.datepicker-input {
+.contact-us__form-date--input[name="date"] {
   margin-top: 0px;
 }
 
@@ -105,8 +105,8 @@ button.contact-us__form-button:hover {
   bottom: 0;
   width: 16px;
   height: 40px;
-  mask: url(/img/contact_us/calendar-icon.svg) no-repeat 50% 50%;
-  -webkit-mask: url(/img/contact_us/calendar-icon.svg) no-repeat 50% 50%;
+  mask: url(https://raw.githubusercontent.com/koldovsky/1063-team-06/main/img/contact_us/calendar-icon.svg) no-repeat 50% 50%;
+  -webkit-mask: url(https://raw.githubusercontent.com/koldovsky/1063-team-06/main/img/contact_us/calendar-icon.svg) no-repeat 50% 50%;
   background-color: rgb(155 156 158);
 }
 
