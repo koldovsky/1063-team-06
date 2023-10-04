@@ -1,10 +1,10 @@
-/* .header__blog {
+.header__blog {
   max-width: 767px;
     margin: 50px auto 0;
     padding: 0 10px;
 }
 
-.blog-photo__container {
+/* .blog-photo__container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
