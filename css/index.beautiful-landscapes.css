@@ -174,7 +174,7 @@ z-index: 1;
 
 /* quote */
 .quote__wrapper {
-    padding: 60px 20px 45px;
+    padding: 60px 10px 45px;
     margin-top: 50px;
 }
 
@@ -328,8 +328,10 @@ z-index: 1;
     .quote__wrapper-text {
         display: flex;
         flex-direction: column;
-        max-width: 750px;
         justify-content: center;
+        align-items: center;
+        max-width: 63%;
+        position: relative;
     }
     .quote__text {
         font-size: 19px;
