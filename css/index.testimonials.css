@@ -13,6 +13,9 @@
     margin: 50px auto 0;
     padding: 0 10px;
 }
+.testimonials .header-content__subtitle {
+    text-align: center;
+}
 .testimonials .header-content__description {
     font-size: 19px;
     font-weight: 300;
