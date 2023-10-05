@@ -1,92 +1,110 @@
+.blog {
+  width: 100%;
+  padding: 90px 0 70px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
 .blog__header {
-  max-width: 767px;
-    margin: 50px auto 0;
-    padding: 0 10px;
-    text-align: center;
-    margin-top: 25px;
-    max-width: 100%;
-    font-size: 19px;
-    font-weight: 300;
-    line-height: 32px;
-    padding: 25px 0 15px;
-}
-
-.subtitle__blog {
-    font-size: 45px;
-    letter-spacing: 1.35px;
-    line-height: 54px;
-    margin-top: 10px;
-}
-
-.plain-text__blog {
+  text-align: center;
+  width: 100%;
   font-size: 19px;
-    font-weight: 300;
-    line-height: 32px;
-    margin-top: 25px;
-    max-width: 100%;
-    padding: 25px 0 15px;
+  font-weight: 300;
+  line-height: 32px;
 }
 
-/* Base styles */
-.blog-photo__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.header-content__title {
+  margin-top: 10px;
+  text-align: center;
 }
 
-.blog-block {
+.header-content__text {
+  margin: 25px auto;
+  max-width: 720px;
+  padding: 25px 0 15px;
+}
+
+.blog__posts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.blog__post {
   width: 100%;
-  margin-bottom: 20px;
-  position: relative; /* set position relative for the image to be positioned inside */
-}
-
-.blog-block .img-wrapper {
-  width: 100%;
-  padding-top: 56.25%; /* This is for 16:9 ratio. 9/16 = 0.5625 which is 56.25% */
-  position: relative;
+  color: var(--background-dark-shade);
   overflow: hidden;
 }
 
-.blog-block img {
-  position: absolute; /* Positioned inside the wrapper */
-  top: 0;
-  left: 0;
+.post-item__img-wrapper {
+  height: 50%;
   width: 100%;
+}
+
+.post-item__image {
   height: 100%;
   object-fit: cover;
 }
 
-.subtitle, .text {
-  margin-top: 10px;
+.post-item__date {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-/* Media query for larger resolutions */
-@media (min-width: 768px) {
-  .blog-block {
-    width: calc(33.33% - 20px); /* subtracting margin for some spacing between the blocks */
+.post-item__subtitle {
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.post-item__text {
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--text-gray-color);
+}
+
+@media (min-width: 450px) {
+  .post-item__img-wrapper {
+    height: 60%;
   }
 }
 
-
-
-
-
-
-
-
-/* .blog-photo__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  max-width: 767px;
-  margin: 20px auto;
+@media (min-width: 550px) {
+  .post-item__img-wrapper {
+    height: 70%;
+  }
 }
 
-.left-block__blog
-.middle-block__blog
-.right-block__blog {
-  max-width: 33.33%;
-  text-align: left;
-  margin-right: 20px;
-} */
+@media (min-width: 768px) {
+  .blog {
+    padding: 110px 0 70px;
+  }
+
+  .blog__posts-container {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .blog__posts-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 40px;
+  }
+
+  .post-item__img-wrapper {
+    height: 50%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .blog {
+    padding: 125px 0 70px;
+  }
+
+  .blog__posts-container {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
